@@ -48,30 +48,12 @@ class MapListState extends FlxState {
 	public var PACK_SELECTOR:FlxText = new FlxText(0, 0, 0, "Pack Selector");
 	public var CHALLENGES:FlxText = new FlxText(0, 0, 0, "Challenges");
 
-	// level popup shit
-	public var LP_BOX:FlxSprite = new FlxSprite(0, 0, Assets.TEMP__png);
-	public var LP_TITLE:FlxText = new FlxText(0, 0, 0, "You have not unlocked any maps!");
-	public var LP_DESC:FlxText = new FlxText(0, 0, 0, "You have not unlocked any levels yet!");
-	public var LP_BUTTON_GOTO:FlxSprite = new FlxSprite(0, 0, Assets.TEMP__png);
-	public var LP_BUTTON_CANCEL:FlxSprite = new FlxSprite(0, 0, Assets.TEMP__png);
-
 	override public function create() {
 		super.create();
 
 		// Presence.changePresence("In the map list", null);
 
 		// Define variables
-
-		LP_BOX.screenCenter();
-		add(LP_BOX);
-		LP_TITLE.setFormat(null, 32, FlxColor.PURPLE, FlxTextAlign.CENTER);
-		LP_DESC.setFormat(null, 16, FlxColor.WHITE, FlxTextAlign.CENTER);
-		LP_BUTTON_GOTO.x = 0; // Fix this later
-		LP_BUTTON_GOTO.y = 0;
-		add(LP_BUTTON_GOTO);
-		LP_BUTTON_CANCEL.x = 0;
-		LP_BUTTON_CANCEL.y = 0;
-		add(LP_BUTTON_CANCEL);
 
 		BACKGROUND = new FlxSprite();
 		BACKGROUND.loadGraphic(Assets.TEMPORARY_BACKGROUND__png);

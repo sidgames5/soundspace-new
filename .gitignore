@@ -2,5 +2,6 @@
 hxformat.json
 *.hxproj
 
-# lime
-export/
+# Build
+Debug/
+Release/

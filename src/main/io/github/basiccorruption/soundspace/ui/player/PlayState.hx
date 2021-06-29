@@ -12,7 +12,7 @@ import io.github.basiccorruption.soundspace.ui.player.CompletedState;
 import io.github.basiccorruption.soundspace.utils.*;
 
 // import sys.io.File;
-class PlayState extends Chart {
+class PlayState extends FlxState {
 	// Declare variables
 	private var SSM:DefaultMapList;
 	// private var MAP_CONTENT = File.getContent(SSM);

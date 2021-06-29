@@ -32,12 +32,12 @@ class ApplicationMain
 
 		ManifestResources.init(config);
 
-		app.meta["build"] = "3";
+		app.meta["build"] = "5";
 		app.meta["company"] = "Keystone Games";
 		app.meta["file"] = "SoundSpace";
 		app.meta["name"] = "SoundSpace";
 		app.meta["packageName"] = "io.github.basiccorruption.soundspace";
-		app.meta["version"] = "0.0.10.1";
+		app.meta["version"] = "0.0.10.2";
 
 		
 

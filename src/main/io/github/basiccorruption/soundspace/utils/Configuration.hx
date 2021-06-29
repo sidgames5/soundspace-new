@@ -7,7 +7,7 @@ class Configuration {
 	public static var FULLSCREEN:Bool = true;
 	public static var AUTO_PAUSE:Bool = true;
 
-	public static var VERSION = "0.0.10.1";
+	public static var VERSION = "0.0.10.2";
 	public static var TOKEN:String;
 
 	// Mouse

@@ -6,4 +6,6 @@ class Presence {
 	private var CLIENT_ID = "";
 
 	public function new() {}
+
+	public static function update(state:String, details:String) {}
 }

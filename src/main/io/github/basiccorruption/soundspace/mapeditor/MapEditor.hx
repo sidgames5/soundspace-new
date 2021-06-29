@@ -10,7 +10,7 @@ import sys.io.File;
 using io.github.basiccorruption.soundspace.utils.WindowUtils.Exit;
 using io.github.basiccorruption.soundspace.utils.WindowUtils.Println;
 
-class MapEditor extends Chart {
+class MapEditor extends FlxState {
 	// Declare variables
 	private var SSM:Path;
 	private var MAP_CONTENT = File.getContent(SSM);
