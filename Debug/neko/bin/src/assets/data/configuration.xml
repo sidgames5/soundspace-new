@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <window fullscreen="true" width="1280" height="720" />
+    <audio volume="100" />
+</config>
