@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart>
+    <songinfo name="Insane SoundSpace" artist="LeWolfYT" mapper="" pack="0" />
+    <difficulty name="Easy">
+        <chartinfo tempo="" ar="1" />
+        <hitobjects>
+            <!-- To create a hitobject: <beat lane1="time" lane2="time" lane3="time" lane4="time" />-->
+        </hitobjects>
+    </difficulty>
+    <difficulty name="Normal">
+        <chartinfo tempo="" ar="0.5" />
+        <hitobjects>
+            <!-- To create a hitobject: <beat lane1="time" lane2="time" lane3="time" lane4="time" />-->
+        </hitobjects>
+    </difficulty>
+    <difficulty name="Hard">
+        <chartinfo tempo="" ar="0.25" />
+        <hitobjects>
+            <!-- To create a hitobject: <beat lane1="time" lane2="time" lane3="time" lane4="time" />-->
+        </hitobjects>
+    </difficulty>
+</chart>

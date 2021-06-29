@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart>
+    <songinfo name="3d3244" artist="BasicCorruption" mapper="BasicCorruption" pack="0" />
+    <difficulty name="Easy">
+        <chartinfo tempo="128" ar="1" />
+        <hitobjects>
+            <!-- To create a hitobject: <beat lane1="time" lane2="time" lane3="time" lane4="time" />-->
+        </hitobjects>
+    </difficulty>
+    <difficulty name="Normal">
+        <chartinfo tempo="128" ar="0.5" />
+        <hitobjects>
+            <!-- To create a hitobject: <beat lane1="time" lane2="time" lane3="time" lane4="time" />-->
+        </hitobjects>
+    </difficulty>
+    <difficulty name="Hard">
+        <chartinfo tempo="128" ar="0.25" />
+        <hitobjects>
+            <!-- To create a hitobject: <beat lane1="time" lane2="time" lane3="time" lane4="time" />-->
+        </hitobjects>
+    </difficulty>
+</chart>
