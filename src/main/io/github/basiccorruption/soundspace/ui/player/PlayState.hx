@@ -161,7 +161,7 @@ class PlayState extends FlxState {
 
 			// Charts the map
 			// The tempo of the song is 128 beats per minute
-			FlxG.sound.playMusic(Assets.Tutorial__wav, Configuration.VOLUME / 100, false);
+			FlxG.sound.playMusic(Maps.id_1__mp3, Configuration.VOLUME / 100, false);
 
 			// TEMP_VFX = VisualEffects.createVFX(VFX.SMOKE_BOTTOM);
 			add(TEMP_VFX);

@@ -15,16 +15,17 @@ class ChallengeSelector extends FlxState {
 
 	public var CURSOR = Cursor.create();
 
-	public var ABOUT:FlxText = new FlxText(0, 0, 0,
-		"What are challenges?\nYou can complete challenges to gain XP and unlock special maps.\nCompleting 2 challenges every day can get you a lot of XP!");
+	public var ABOUT:FlxText = new FlxText(0, 64, 0, "What are challenges?\nYou can complete challenges to gain XP and unlock special maps.\nCompleting 2 challenges every day can get you a lot of XP!");
 
 	override public function create() {
 		super.create();
 
 		TITLE.setFormat(null, 64, FlxColor.PURPLE, FlxTextAlign.CENTER);
+		TITLE.screenCenter(X);
 		TITLE.text = "Challenge Selector";
 
-		ABOUT.setFormat(null, 64, FlxColor.WHITE, FlxTextAlign.CENTER);
+		ABOUT.setFormat(null, 16, FlxColor.WHITE, FlxTextAlign.CENTER);
+		ABOUT.screenCenter(X);
 
 		LEVEL_1.screenCenter();
 		add(LEVEL_1);

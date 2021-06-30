@@ -179,7 +179,7 @@ class MapListState extends FlxState {
 			FlxG.switchState(new MusicPacks());
 		}
 		if (FlxG.mouse.overlaps(CHALLENGES) && FlxG.mouse.justPressed) {
-			FlxG.switchState(new ChallengeSelector());
+			//FlxG.switchState(new ChallengeSelector());
 		}
 
 		if (MusicPacks.PACK_SELECTED == "others") {
