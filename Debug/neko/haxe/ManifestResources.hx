@@ -93,56 +93,56 @@ null
 #if !display
 #if flash
 
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_configuration_xml extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_dms_0_df_tutorial_json extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_dms_1_3d3244_mp3 extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_dms_1_df_3d3244_xml extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_dms_2_df_insane_soundspace_xml extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_dms_2_song_mp3 extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_ico_svg extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_icon_ico extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_tutorial_mp3 extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_tutorial_wav extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_updater_bat extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_back_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_back_button_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_blank_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_button_click_wav extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_cancel_exit_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_cancel_exit_button_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_cursor_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_edit_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_exit_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_exit_button_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_exit_button_ls_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_icon_1280px_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_icon_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_interactive_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_key_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_key_clicked_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_login_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_mapselector_tutorial_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_menutheme_mp3 extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_menutheme_wav extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_note_clap_wav extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_note_hat_wav extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_note_kick_wav extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_note_snare_wav extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_old_button_click_wav extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_options_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_pack_others_logo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_pack_starter_logo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_play_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_settingseffect_wav extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_setting_change_wav extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_shader_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_sign_up_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_smoke_bottom_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_smoke_left_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_smoke_right_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_smoke_top_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_temp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_temporary_background_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_data_configuration_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_data_ico_svg extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_data_icon_ico extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_data_tutorial_mp3 extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_data_tutorial_wav extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_data_updater_bat extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_back_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_back_button_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_blank_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_button_click_wav extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_cancel_exit_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_cancel_exit_button_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_cursor_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_edit_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_exit_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_exit_button_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_exit_button_ls_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_icon_1280px_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_icon_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_interactive_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_key_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_key_clicked_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_login_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_mapselector_tutorial_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_menutheme_mp3 extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_menutheme_wav extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_note_clap_wav extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_note_hat_wav extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_note_kick_wav extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_note_snare_wav extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_old_button_click_wav extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_options_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_pack_others_logo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_pack_starter_logo_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_play_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_settingseffect_wav extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_setting_change_wav extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_shader_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_sign_up_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_smoke_bottom_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_smoke_left_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_smoke_right_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_smoke_top_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_temp_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__resources_textures_default_sst_temporary_background_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__maps_0_id_0_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__maps_1_id_1_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__maps_1_id_1_mp3 extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__maps_2_id_2_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__maps_2_id_2_mp3 extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
