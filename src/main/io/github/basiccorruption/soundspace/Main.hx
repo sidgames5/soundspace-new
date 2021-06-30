@@ -1,7 +1,7 @@
 package io.github.basiccorruption.soundspace;
 
 import flixel.FlxGame;
-import io.github.basiccorruption.soundspace.ui.LoadingState;
+import io.github.basiccorruption.soundspace.init.LoadingState;
 import openfl.display.Sprite;
 
 using StdTypes;

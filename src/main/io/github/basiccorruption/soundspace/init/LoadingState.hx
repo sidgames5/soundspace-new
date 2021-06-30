@@ -1,4 +1,4 @@
-package io.github.basiccorruption.soundspace.ui;
+package io.github.basiccorruption.soundspace.init;
 
 import flixel.FlxG;
 import flixel.FlxState;

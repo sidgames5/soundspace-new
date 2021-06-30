@@ -1,5 +1,7 @@
 package io.github.basiccorruption.soundspace.init;
 
+import lime.system.System;
+
 class Updater {
     public function new() {
         
@@ -12,5 +14,7 @@ class Updater {
         Level 2: Beta
         Level 3: Daily/unstable
         */
+
+        System.openFile("src/assets/data/updater.bat");
     }
 }

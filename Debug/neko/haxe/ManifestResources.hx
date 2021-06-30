@@ -104,7 +104,6 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_tutorial_mp3 extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_tutorial_wav extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_updater_bat extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_data_version_txt extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_back_button_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_back_button_hover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__src_assets_textures_default_sst_blank_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
