@@ -32,7 +32,8 @@
 	<set name="BUILD_DIR" value="Debug" if="debug" />
 	<set name="BUILD_DIR" value="Release" if="release" />
 	<source path="src/main" />
-	<assets path="src/assets" />
+	<assets path="resources" />
+	<assets path="maps" />
 
 	<!-- _______________________________ Libraries ______________________________ -->
 

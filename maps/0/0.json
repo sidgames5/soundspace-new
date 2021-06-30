@@ -2,7 +2,10 @@
     "song": {
         "name": "Tutorial",
         "artist": "BasicCorruption",
-        "mapper": "BasicCorruption"
+        "mapper": "BasicCorruption",
+        "bpm": 120,
+        "album": "",
+        "pack": "others"
     },
 
     "mapUrl": "https://basiccorruption.github.io/soundspace-site/maps/0/",

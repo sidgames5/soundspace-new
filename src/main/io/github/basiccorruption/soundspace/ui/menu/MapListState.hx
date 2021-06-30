@@ -184,7 +184,6 @@ class MapListState extends FlxState {
 
 		if (MusicPacks.PACK_SELECTED == "others") {
 			if (FlxG.mouse.overlaps(MAP_TUTORIAL) && FlxG.mouse.justPressed) {
-				// var text = Xml.parse(File.getContent("src/assets/data/dms/df_tutorial/df_tutorial.xml")).firstElement().firstElement().firstChild().nodeValue();
 				MAPINFO_NAME.text = "Tutorial";
 				MAPINFO_ARTIST.text = "by: BasicCorruption";
 				MAPINFO_MAPPER.text = "Mapped by: BasicCorruption";
@@ -200,7 +199,6 @@ class MapListState extends FlxState {
 			}
 		} else if (MusicPacks.PACK_SELECTED == "starter") {
 			if (FlxG.mouse.overlaps(MAP_3D3244) && FlxG.mouse.justPressed) {
-				// var text = Xml.parse(File.getContent("src/assets/data/dms/df_tutorial/df_tutorial.xml")).firstElement().firstElement().firstChild().nodeValue();
 				MAPINFO_NAME.text = "3d3244";
 				MAPINFO_ARTIST.text = "by: BasicCorruption";
 				MAPINFO_MAPPER.text = "Mapped by: BasicCorruption";
