@@ -1,5 +1,7 @@
-package io.github.basiccorruption.soundspace.utils;
+package sfr;
 
+import io.github.basiccorruption.soundspace.Assets;
+import io.github.basiccorruption.soundspace.HitSounds;
 import flixel.FlxSprite;
 import flixel.tweens.FlxTween;
 import io.github.basiccorruption.soundspace.ui.player.PlayState;

@@ -9,7 +9,7 @@ import haxe.Timer;
 import haxe.io.Path;
 import io.github.basiccorruption.soundspace.ui.menu.MapListState;
 import io.github.basiccorruption.soundspace.ui.player.CompletedState;
-import io.github.basiccorruption.soundspace.utils.*;
+import sfr.*;
 
 // import sys.io.File;
 class PlayState extends FlxState {
@@ -51,6 +51,8 @@ class PlayState extends FlxState {
 	public var TEMP_VFX:FlxSprite;
 
 	public var DIFFICULTYY:Int = 0;
+
+	public var FPS:FlxText = new FlxText(0, 0, 0, "");
 
 	override public function create() {
 		super.create();
@@ -186,10 +188,12 @@ class PlayState extends FlxState {
 			}
 		}
 
+		trace("Calculating statistics");
 		STATS.text = "Accuracy: " + ACCURACY * 100 + "%";
 		if (TOTAL_NOTES >= 1) {
 			ACCURACY = TOTAL_HITS / TOTAL_NOTES;
 		}
+		trace("Statistics calculated");
 
 		if (FlxG.keys.justPressed.ESCAPE) {
 			FlxG.switchState(new MapListState());

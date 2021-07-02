@@ -4,8 +4,8 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import haxe.io.Path;
 import io.github.basiccorruption.soundspace.ui.menu.MapListState;
-import io.github.basiccorruption.soundspace.utils.Cursor;
-import io.github.basiccorruption.soundspace.utils.Keybinds;
+import sfr.Cursor;
+import sfr.Keybinds;
 
 class FailedState extends PlayState {
 	// Declare variables

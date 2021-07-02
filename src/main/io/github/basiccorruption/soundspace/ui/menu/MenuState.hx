@@ -7,11 +7,11 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import haxe.Timer;
-import io.github.basiccorruption.soundspace.utils.Configuration;
-import io.github.basiccorruption.soundspace.utils.Cursor;
-import io.github.basiccorruption.soundspace.utils.Keybinds;
+import sfr.Configuration;
+import sfr.Cursor;
+import sfr.Keybinds;
 
-using io.github.basiccorruption.soundspace.utils.WindowUtils;
+using sfr.WindowUtils;
 
 class MenuState extends FlxState {
 	// Declare variables
@@ -36,13 +36,13 @@ class MenuState extends FlxState {
 
 	public static var BUTTON_SELECTED:FlxObject;
 	public static var EXIT_OVERLAY_ENABLED:Bool = false;
-
+	
 	override public function create() {
 		super.create();
 
 		// Presence.changePresence("In the menu", null);
 
-		FlxG.sound.playMusic(Assets.MenuTheme__wav);
+		FlxG.sound.playMusic(Assets.MenuTheme__wav, Configuration.VOLUME / 100);
 
 		// Define variables
 

@@ -5,9 +5,9 @@ import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
-import io.github.basiccorruption.soundspace.utils.Cursor;
-import io.github.basiccorruption.soundspace.utils.Keybinds;
-import io.github.basiccorruption.soundspace.utils.WindowUtils;
+import sfr.Cursor;
+import sfr.Keybinds;
+import sfr.WindowUtils;
 
 class EditMapListState extends FlxState {
 	// Declare variables

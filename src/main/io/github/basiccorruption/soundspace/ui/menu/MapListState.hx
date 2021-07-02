@@ -6,8 +6,8 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import io.github.basiccorruption.soundspace.ui.player.PlayState;
-import io.github.basiccorruption.soundspace.utils.Cursor;
-import io.github.basiccorruption.soundspace.utils.Keybinds;
+import sfr.Cursor;
+import sfr.Keybinds;
 
 // import sys.io.File;
 class MapListState extends FlxState {

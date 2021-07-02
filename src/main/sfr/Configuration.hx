@@ -1,9 +1,9 @@
-package io.github.basiccorruption.soundspace.utils;
+package sfr;
 
 import flixel.FlxG;
 
 class Configuration {
-	public static var VOLUME:Int = 100;
+	public static var VOLUME:Int = 50;
 	public static var FULLSCREEN:Bool = true;
 	public static var AUTO_PAUSE:Bool = true;
 

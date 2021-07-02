@@ -5,7 +5,7 @@ import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
-import io.github.basiccorruption.soundspace.utils.Cursor;
+import sfr.Cursor;
 
 class MusicPacks extends FlxState {
 	public var TITLE:FlxText;

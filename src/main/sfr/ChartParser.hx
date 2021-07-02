@@ -1,4 +1,4 @@
-package io.github.basiccorruption.soundspace.utils.player;
+package sfr;
 
 import haxe.Json;
 import sys.io.File;

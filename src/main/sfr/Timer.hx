@@ -1,4 +1,4 @@
-package io.github.basiccorruption.soundspace.utils;
+package sfr;
 
 class Timer {
 	public function new(length:Float) {}

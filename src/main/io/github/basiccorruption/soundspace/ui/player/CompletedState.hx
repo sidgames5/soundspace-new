@@ -5,9 +5,9 @@ import flixel.FlxSprite;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import haxe.io.Path;
-import io.github.basiccorruption.soundspace.utils.ChartUtils;
-import io.github.basiccorruption.soundspace.utils.Cursor;
-import io.github.basiccorruption.soundspace.utils.Keybinds;
+import sfr.ChartUtils;
+import sfr.Cursor;
+import sfr.Keybinds;
 
 class CompletedState extends PlayState {
 	// Declare variables

@@ -6,9 +6,9 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import io.github.basiccorruption.soundspace.ui.menu.MenuState;
-import io.github.basiccorruption.soundspace.utils.Configuration;
-import io.github.basiccorruption.soundspace.utils.Cursor;
-import io.github.basiccorruption.soundspace.utils.Keybinds;
+import sfr.Configuration;
+import sfr.Cursor;
+import sfr.Keybinds;
 
 class OptionsState extends FlxState {
 	// Declare variables

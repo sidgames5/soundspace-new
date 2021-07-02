@@ -1,5 +1,7 @@
-package io.github.basiccorruption.soundspace.utils;
+package sfr;
 
+import io.github.basiccorruption.soundspace.VFX;
+import io.github.basiccorruption.soundspace.Assets;
 import flixel.FlxSprite;
 
 class VisualEffects {
