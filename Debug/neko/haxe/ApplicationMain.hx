@@ -32,11 +32,11 @@ class ApplicationMain
 
 		ManifestResources.init(config);
 
-		app.meta["build"] = "11";
+		app.meta["build"] = "12";
 		app.meta["company"] = "Keystone Games";
 		app.meta["file"] = "SoundSpace";
 		app.meta["name"] = "SoundSpace";
-		app.meta["packageName"] = "io.github.basiccorruption.soundspace";
+		app.meta["packageName"] = "io.github.keystone_games.soundspace";
 		app.meta["version"] = "0.0.10.2";
 
 		
@@ -163,7 +163,7 @@ class ApplicationMain
 	{
 		var hasMain = false;
 
-		switch (Context.follow(Context.getType("io.github.basiccorruption.soundspace.Main")))
+		switch (Context.follow(Context.getType("io.github.keystone_games.soundspace.Main")))
 		{
 			case TInst(t, params):
 
@@ -179,7 +179,7 @@ class ApplicationMain
 
 				if (hasMain)
 				{
-					return Context.parse("@:privateAccess io.github.basiccorruption.soundspace.Main.main()", Context.currentPos());
+					return Context.parse("@:privateAccess io.github.keystone_games.soundspace.Main.main()", Context.currentPos());
 				}
 				else if (type.constructor != null)
 				{
@@ -198,12 +198,12 @@ class ApplicationMain
 				}
 				else
 				{
-					Context.fatalError("Main class \"io.github.basiccorruption.soundspace.Main\" has neither a static main nor a constructor.", Context.currentPos());
+					Context.fatalError("Main class \"io.github.keystone_games.soundspace.Main\" has neither a static main nor a constructor.", Context.currentPos());
 				}
 
 			default:
 
-				Context.fatalError("Main class \"io.github.basiccorruption.soundspace.Main\" isn't a class.", Context.currentPos());
+				Context.fatalError("Main class \"io.github.keystone_games.soundspace.Main\" isn't a class.", Context.currentPos());
 		}
 
 		return null;
@@ -296,7 +296,7 @@ class ApplicationMain
 
 #if !macro
 @:build(DocumentClass.build())
-@:keep @:dox(hide) class DocumentClass extends io.github.basiccorruption.soundspace.Main {}
+@:keep @:dox(hide) class DocumentClass extends io.github.keystone_games.soundspace.Main {}
 #else
 class DocumentClass
 {

@@ -1,10 +1,10 @@
 package sfr;
 
-import io.github.basiccorruption.soundspace.Assets;
-import io.github.basiccorruption.soundspace.HitSounds;
+import io.github.keystone_games.soundspace.Assets;
+import io.github.keystone_games.soundspace.HitSounds;
 import flixel.FlxSprite;
 import flixel.tweens.FlxTween;
-import io.github.basiccorruption.soundspace.ui.player.PlayState;
+import io.github.keystone_games.soundspace.ui.player.PlayState;
 
 class ChartUtils extends PlayState {
 	public static var tempNote:FlxSprite;

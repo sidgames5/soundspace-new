@@ -4,7 +4,7 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="SoundSpace" file="SoundSpace" main="io.github.basiccorruption.soundspace.Main" version="0.0.10.2" company="Keystone Games" package="io.github.basiccorruption.soundspace" />
+	<app title="SoundSpace" file="SoundSpace" main="io.github.keystone_games.soundspace.Main" version="0.0.10.2" company="Keystone Games" package="io.github.keystone_games.soundspace" />
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
 	<app preloader="flixel.system.FlxPreloader" />

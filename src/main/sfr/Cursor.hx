@@ -2,7 +2,7 @@ package sfr;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
-import io.github.basiccorruption.soundspace.Assets;
+import io.github.keystone_games.soundspace.Assets;
 
 class Cursor {
 	public static var CURSOR:FlxSprite;

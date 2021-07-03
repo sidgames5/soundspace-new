@@ -42,5 +42,5 @@
 --macro flixel.system.macros.FlxDefines.run()
 -cp Debug/neko/haxe
 -neko Debug/neko/obj/ApplicationMain.n
---macro keep("io.github.basiccorruption.soundspace.Main")
+--macro keep("io.github.keystone_games.soundspace.Main")
 -debug

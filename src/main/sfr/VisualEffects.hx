@@ -1,7 +1,7 @@
 package sfr;
 
-import io.github.basiccorruption.soundspace.VFX;
-import io.github.basiccorruption.soundspace.Assets;
+import io.github.keystone_games.soundspace.VFX;
+import io.github.keystone_games.soundspace.Assets;
 import flixel.FlxSprite;
 
 class VisualEffects {
