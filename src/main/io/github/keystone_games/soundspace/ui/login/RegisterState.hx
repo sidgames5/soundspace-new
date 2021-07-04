@@ -6,7 +6,7 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import haxe.io.Path;
-import io.github.keystone_games.soundspace.utils.Keybinds;
+import sfr.Keybinds;
 
 class RegisterState extends FlxState {
 	// Declare variables

@@ -1,7 +1,7 @@
 package io.github.keystone_games.soundspace.ui.menu;
 
-import io.github.keystone_games.soundspace.utils.Cursor;
-import io.github.keystone_games.soundspace.utils.Keybinds;
+import sfr.Cursor;
+import sfr.Keybinds;
 import flixel.FlxState;
 import flixel.FlxG;
 import flixel.FlxSprite;

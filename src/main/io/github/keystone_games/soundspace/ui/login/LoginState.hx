@@ -7,7 +7,7 @@ import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import haxe.io.Path;
 import io.github.keystone_games.soundspace.ui.menu.MenuState;
-import io.github.keystone_games.soundspace.utils.Keybinds;
+import sfr.Keybinds;
 
 class LoginState extends FlxState {
 	// Declare variables

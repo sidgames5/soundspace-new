@@ -5,9 +5,9 @@ import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
-import io.github.keystone_games.soundspace.utils.Configuration;
-import io.github.keystone_games.soundspace.utils.Keybinds;
-import io.github.keystone_games.soundspace.utils.WindowUtils;
+import sfr.Configuration;
+import sfr.Keybinds;
+import sfr.WindowUtils;
 
 class StartupState extends FlxState {
 	// Declare variables

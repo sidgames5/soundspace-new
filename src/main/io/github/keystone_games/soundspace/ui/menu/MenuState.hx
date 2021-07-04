@@ -1,5 +1,8 @@
 package io.github.keystone_games.soundspace.ui.menu;
 
+import lime.system.System;
+import flixel.addons.api.FlxGameJolt;
+import io.github.keystone_games.soundspace.init.Splashes;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
@@ -36,6 +39,8 @@ class MenuState extends FlxState {
 
 	public static var BUTTON_SELECTED:FlxObject;
 	public static var EXIT_OVERLAY_ENABLED:Bool = false;
+
+	public var SPLASH:FlxText;
 	
 	override public function create() {
 		super.create();
@@ -55,8 +60,10 @@ class MenuState extends FlxState {
 
 		TITLE = new FlxText(0, 0, 0, "SoundSpace", 64, true);
 		TITLE.setFormat(null, 64, FlxColor.PURPLE, FlxTextAlign.CENTER);
-		TITLE.screenCenter();
-		TITLE.y = 0;
+		TITLE.screenCenter(X);
+		SPLASH = new FlxText(0, 0, 0, Splashes.list()[Random.int(0, Splashes.NUM_SPLASHES)], 24);
+		SPLASH.screenCenter(X);
+		SPLASH.y = 96;
 
 		INTERACTIVE_BUTTON = new FlxSprite();
 		INTERACTIVE_BUTTON.loadGraphic(Assets.INTERACTIVE_BUTTON__png);
@@ -106,6 +113,7 @@ class MenuState extends FlxState {
 		// Add objects (FlxBasic) to state
 
 		add(TITLE);
+		add(SPLASH);
 
 		add(INTERACTIVE_BUTTON);
 		add(PLAY_BUTTON);
@@ -144,6 +152,13 @@ class MenuState extends FlxState {
 				EXIT_BUTTON.visible = false;
 				CANCEL_EXIT_BUTTON.visible = false;
 			}
+		}
+
+		if (SPLASH.visible == true && SPLASH.text == Splashes.list()[2] && FlxG.mouse.overlaps(SPLASH) && FlxG.mouse.justPressed) {
+			System.openURL("https://www.youtube.com/channel/UCFVm-dImWBWqeIoGcIxIt_w", "_blank");
+		}
+		if (SPLASH.visible == true && SPLASH.text == Splashes.list()[3] && FlxG.mouse.overlaps(SPLASH) && FlxG.mouse.justPressed) {
+			System.openURL("https://discord.gg/X5bQvcNKQh", "_blank");
 		}
 
 		if (FlxG.mouse.overlaps(EXIT_BUTTON) && FlxG.mouse.justPressed && SHADER.visible == true) {
