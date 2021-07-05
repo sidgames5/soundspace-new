@@ -8,7 +8,7 @@
         "pack": "starter"
     },
 
-    "mapUrl": "https://basiccorruption.github.io/soundspace-site/maps/1/",
+    "mapUrl": "https://keystone-games.github.io/soundspace-site/maps/1/",
 
     "map": {
         "difficulties": [[{"name": "Easy", "id": 0, "timing": {"unit": "bpm", "timeunit": "seconds"}},{"time": 0, "effects": ["SMOKE_BOTTOM"]}],

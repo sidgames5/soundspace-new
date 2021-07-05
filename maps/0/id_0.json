@@ -7,10 +7,23 @@
         "album": "",
         "pack": "others"
     },
-
-    "mapUrl": "https://basiccorruption.github.io/soundspace-site/maps/0/",
-
+    "mapUrl": "https://keystone-games.github.io/soundspace-site/maps/0/",
     "map": {
-        "difficulty": [{"name": "$song.name", "id": 0, "timing": {"unit": "bpm", "timeunit": "seconds"}},{"time": 0, "effects": ["SMOKE_BOTTOM"]}]
+        "difficulty": [
+            {
+                "name": "$song.name",
+                "id": 0,
+                "timing": {
+                    "unit": "bpm",
+                    "timeunit": "seconds"
+                }
+            },
+            {
+                "time": 0,
+                "effects": [
+                    "SMOKE_BOTTOM"
+                ]
+            }
+        ]
     }
 }

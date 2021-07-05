@@ -3,5 +3,5 @@ hxformat.json
 *.hxproj
 
 # Build
-Debug/
+Build/
 Release/

@@ -1,8 +1,7 @@
 package io.github.keystone_games.soundspace.ui.menu;
 
-import lime.system.System;
-import flixel.addons.api.FlxGameJolt;
 import io.github.keystone_games.soundspace.init.Splashes;
+import lime.system.System;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
@@ -154,10 +153,10 @@ class MenuState extends FlxState {
 			}
 		}
 
-		if (SPLASH.visible == true && SPLASH.text == Splashes.list()[2] && FlxG.mouse.overlaps(SPLASH) && FlxG.mouse.justPressed) {
+		if (SPLASH.visible == true && SPLASH.text == Splashes.list()[2] && FlxG.mouse.overlaps(SPLASH) && FlxG.mouse.justPressed && EXIT_OVERLAY_ENABLED == false) {
 			System.openURL("https://www.youtube.com/channel/UCFVm-dImWBWqeIoGcIxIt_w", "_blank");
 		}
-		if (SPLASH.visible == true && SPLASH.text == Splashes.list()[3] && FlxG.mouse.overlaps(SPLASH) && FlxG.mouse.justPressed) {
+		if (SPLASH.visible == true && SPLASH.text == Splashes.list()[3] && FlxG.mouse.overlaps(SPLASH) && FlxG.mouse.justPressed && EXIT_OVERLAY_ENABLED == false) {
 			System.openURL("https://discord.gg/X5bQvcNKQh", "_blank");
 		}
 

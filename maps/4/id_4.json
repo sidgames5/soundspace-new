@@ -1,0 +1,29 @@
+{
+    "song": {
+        "name": "Music Not Found",
+        "artist": "BasicCorruption",
+        "mapper": "BasicCorruption",
+        "bpm": 999,
+        "album": "Error 404",
+        "pack": "others"
+    },
+    "mapUrl": "https://keystone-games.github.io/soundspace-site/maps/4/",
+    "map": {
+        "difficulty": [
+            {
+                "name": "Easy",
+                "id": 0,
+                "timing": {
+                    "unit": "bpm",
+                    "timeunit": "seconds"
+                }
+            },
+            {
+                "time": 0,
+                "effects": [
+                    "SMOKE_BOTTOM"
+                ]
+            }
+        ]
+    }
+}
