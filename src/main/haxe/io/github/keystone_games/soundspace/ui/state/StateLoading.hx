@@ -32,16 +32,25 @@ class StateLoading extends FlxState
 		loadingText.y = title.y + 96;
 		add(loadingText);
 
+        trace("Successfully loaded state 'Loading'");
+
         load();
 	}
 
     public static function load() {
+        trace("Loading game assets and scripts");
+
+        FlxG.resizeWindow(1920, 1080);
+        // this code only executes if the sys package is available
         #if sys
+        trace("Sys package available; loading options file");
         // options file
         var directory = System.applicationStorageDirectory;
         var oFile = "./options.json";
         var oFPath = Path.join([directory, oFile]);
+        trace("Checking for existing options file");
         if (!FileSystem.exists(oFPath)) {
+            trace("Options file does not exist; creating one");
             var options = {
                 "audio": {
                     "volumeM": 1
@@ -50,8 +59,20 @@ class StateLoading extends FlxState
             };
             var content = Json.stringify(options);
             File.saveContent(oFPath, content);
+        } else {
+            trace("Options file exists; loading options");
+            var oContent = File.getContent(oFPath);
+            var json = Json.parse(oContent);
+            FlxG.fullscreen = json.fullscreen;
         }
         #end
+
+        onLoadComplete();
+    }
+
+    public static function onLoadComplete() {
+        trace("Load complete!");
+        FlxG.switchState(new StateMenu());
     }
 
 	public override function update(dt:Float)
@@ -74,7 +95,5 @@ class StateLoading extends FlxState
 				}, 500);
 			}, 500);
 		}
-
-        
 	}
 }
