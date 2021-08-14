@@ -1,4 +1,4 @@
 package io.github.keystone_games.soundspace;
 
-@:build(flixel.system.FlxAssets.buildFileReferences("src/main/resources", true))
+@:build(flixel.system.FlxAssets.buildFileReferences("resources/textures", true))
 class Assets {}

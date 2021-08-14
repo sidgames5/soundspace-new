@@ -57,7 +57,9 @@ class StateLoading extends FlxState
 				"audio": {
 					"volumeM": 1
 				},
-				"fullscreen": false
+				"fullscreen": false,
+				"assetGroup": "Default",
+				"keys": ["D", "F", "J", "K"]
 			};
 			var content = Json.stringify(options);
 			File.saveContent(oFPath, content);
@@ -69,6 +71,7 @@ class StateLoading extends FlxState
 			var json = Json.parse(oContent);
 			FlxG.fullscreen = json.fullscreen;
 			Reference.VOLUME_MULTIPLIER = json.audio.volumeM;
+			Reference.ASSET_GROUP = json.assetGroup;
 		}
 		trace("Finished loading options");
 		#end

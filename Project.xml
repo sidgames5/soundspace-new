@@ -31,7 +31,7 @@
 	<set name="BUILD_DIR" value="build/platformsD" if="debug" />
 	<set name="BUILD_DIR" value="build/platformsR" if="release" />
 	<source path="src/main/haxe" />
-	<assets path="src/main/resources" rename="assets" />
+	<assets path="resources" />
 	<assets path="maps" unless="removeMaps" />
 
 	<!-- _______________________________ Libraries ______________________________ -->
@@ -84,7 +84,7 @@
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
-	<icon path="src/main/resources/data/icon.ico" />
+	<icon path="resources/data/icon.ico" />
 	<!--<haxelib name="discord_rpc" />-->
 	<haxelib name="random" />
 </project>
