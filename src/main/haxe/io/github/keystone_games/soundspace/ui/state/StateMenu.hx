@@ -15,6 +15,7 @@ class StateMenu extends FlxState
 	@:noCompletion public static var options_button:FlxText;
 	@:noCompletion public static var exit_button:FlxText;
 	@:noCompletion public static var play_button:FlxText;
+	@:noCompletion public static var credits_button:FlxText;
 
 	public override function create()
 	{
