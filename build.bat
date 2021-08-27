@@ -1,18 +1,13 @@
 @echo off
-
-if %1 == test (
-    lime test neko -debug
-)
-
-if %1 == create (
-    if %2 == release (
-        lime build windows
-        echo %3>Release\windows\bin\version.txt
-        lime build mac
-        echo %3>Release\neko\bin\SoundSpace.app\version.txt
-        lime build linux
-        echo %3>Release\neko\bin\version.txt
-        lime build html5
-        echo %3>Release\html5\bin\version.txt
-    )
-)
+echo Building for windows
+lime build windows -release
+echo %3>Release\windows\bin\version.txt
+echo Building for macOS
+lime build mac -release
+echo %3>Release\neko\bin\SoundSpace.app\version.txt
+echo Building for linux
+lime build linux -release
+echo %3>Release\neko\bin\version.txt
+echo Building for html5
+lime build html5 -release
+echo %3>Release\html5\bin\version.txt

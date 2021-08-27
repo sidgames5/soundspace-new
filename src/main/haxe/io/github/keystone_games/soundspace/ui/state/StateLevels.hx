@@ -1,5 +1,7 @@
 package io.github.keystone_games.soundspace.ui.state;
 
+import flixel.FlxObject;
+import lime.app.Application;
 import flixel.FlxG;
 import flixel.FlxState;
 import flixel.util.FlxColor;
@@ -12,9 +14,16 @@ class StateLevels extends FlxState
 	@:noCompletion public static var header_title:FlxText;
 	@:noCompletion public static var back_button:FlxText;
 
+	private var selected_levelID:String = "tutorial";
+
 	public override function create()
 	{
 		super.create();
+
+		FlxG.sound.pause();
+		switch (selected_levelID) {
+			case "tutorial": FlxG.sound.playMusic(Data.Tutorial__wav);trace("Map \"tutorial\" selected");trace("Playing " + Data.Tutorial__wav);
+		}
 
 		header_title = SimpleText.make("Levels").setFormat("Monsterrat", 96, FlxColor.PURPLE, CENTER);
 		header_title.screenCenter(X);

@@ -21,6 +21,8 @@ class StateOptions extends FlxState
 	{
 		super.create();
 
+		trace("Loading options state");
+
 		header_title = SimpleText.make("Options").setFormat("Monsterrat", 96, FlxColor.PURPLE, CENTER);
 		header_title.screenCenter(X);
 		add(header_title);
@@ -49,9 +51,17 @@ class StateOptions extends FlxState
 			FlxG.switchState(new StateMenu());
 
 		if (Reference.VOLUME_MULTIPLIER < 1.00 && FlxG.mouse.overlaps(volume_up) && FlxG.mouse.justPressed)
+		{
 			Reference.VOLUME_MULTIPLIER += 0.01;
+			trace("Volume increased by 1%");
+			trace("current volume " + Reference.VOLUME_MULTIPLIER);
+		}
 		if (Reference.VOLUME_MULTIPLIER > 0.00 && FlxG.mouse.overlaps(volume_down) && FlxG.mouse.justPressed)
+		{
 			Reference.VOLUME_MULTIPLIER -= 0.01;
+			trace("Volume decreased by 1");
+			trace("current volume " + Reference.VOLUME_MULTIPLIER);
+		}
 		volume_indicator.text = "Volume: " + (Math.round(Reference.VOLUME_MULTIPLIER * 100)) + "%";
 
 		if (FlxG.keys.justPressed.ESCAPE)

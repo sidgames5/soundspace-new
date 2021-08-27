@@ -3,27 +3,26 @@
         "name": "Tutorial",
         "artist": "BasicCorruption",
         "mapper": "BasicCorruption",
-        "bpm": 120,
         "album": "",
         "pack": "others"
     },
-    "mapUrl": "https://keystone-games.github.io/soundspace-site/maps/0/",
-    "map": {
-        "difficulty": [
-            {
-                "name": "$song.name",
-                "id": 0,
-                "timing": {
-                    "unit": "bpm",
-                    "timeunit": "seconds"
+    "level": {
+        "bpm": 120,
+        "diffs": {
+            "0": {
+                "name": "Tutorial",
+                "lanes": 4,
+                "objects": {
+                    "1.1.1": {
+                        "notes": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    }
                 }
-            },
-            {
-                "time": 0,
-                "effects": [
-                    "SMOKE_BOTTOM"
-                ]
             }
-        ]
+        }
     }
 }

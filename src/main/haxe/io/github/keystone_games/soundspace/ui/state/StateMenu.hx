@@ -1,5 +1,6 @@
 package io.github.keystone_games.soundspace.ui.state;
 
+import flixel.input.FlxAccelerometer;
 import flixel.FlxSprite;
 import lime.system.System;
 import flixel.FlxG;
@@ -21,12 +22,17 @@ class StateMenu extends FlxState
 	{
 		super.create();
 
+		trace("Loading main menu");
+
 		header_title = SimpleText.make("SoundSpace").setFormat("Monsterrat", 96, FlxColor.PURPLE, CENTER);
 		header_title.screenCenter(X);
 		add(header_title);
 
 		options_button = SimpleText.make("Options").setFormat("Monsterrat", 48, FlxColor.PURPLE, CENTER);
 		add(options_button);
+
+		credits_button = SimpleText.make("Credits", 0, 1832).setFormat("Monsterrat", 48, FlxColor.PURPLE, CENTER);
+		add(credits_button);
 
 		exit_button = SimpleText.make("Exit", 3700).setFormat("Monsterrat", 48, FlxColor.PURPLE, CENTER);
 		add(exit_button);
@@ -48,6 +54,12 @@ class StateMenu extends FlxState
 		if (FlxG.mouse.overlaps(play_button) && FlxG.mouse.justPressed)
 			FlxG.switchState(new StateLevels());
 
+		if (FlxG.mouse.overlaps(credits_button) && FlxG.mouse.justPressed)
+		{
+			FlxG.openURL("https://github.com/Keystone-Games/SoundSpace#credits--shoutouts");
+			trace("Credits button clicked; opening credits");
+		}
+
 		if (FlxG.keys.justPressed.ESCAPE)
 			SoundSpace.exit(0);
 		if (FlxG.keys.justPressed.F11)
@@ -60,6 +72,27 @@ class StateMenu extends FlxState
 					FlxG.fullscreen = true;
 					trace("Entering fullscreen mode");
 			}
+		if (FlxG.keys.justPressed.F3)
+			switch (Reference.DEBUG.overlay)
+			{
+				case true:
+					Reference.DEBUG.overlay = false;
+					trace("Hiding debug overlay");
+				case false:
+					Reference.DEBUG.overlay = true;
+					trace("Showing debug overlay");
+			}
+		if (FlxG.keys.pressed.F3)
+		{
+			if (FlxG.keys.justPressed.P)
+				switch (Reference.DEBUG.pOLF)
+				{
+					case true:
+						Reference.DEBUG.pOLF = false;
+					case false:
+						Reference.DEBUG.pOLF = true;
+				}
+		}
 
 		FlxG.sound.volume = Reference.VOLUME_MULTIPLIER;
 	}

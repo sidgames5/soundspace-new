@@ -14,6 +14,7 @@ import sys.io.File;
 #end
 
 using io.github.keystone_games.soundspace.ui.util.TextUtil;
+using io.github.keystone_games.soundspace.util.Updater;
 
 class StateLoading extends FlxState
 {
@@ -54,12 +55,18 @@ class StateLoading extends FlxState
 		{
 			trace("Options file does not exist; creating one");
 			var options = {
-				"audio": {
-					"volumeM": 1
-				},
 				"fullscreen": false,
-				"assetGroup": "Default",
-				"keys": ["D", "F", "J", "K"]
+				"audio": {
+					"volumeM": 0.6
+				},
+				"assetGroup": null,
+				"keys": [
+					"S","D","F","G","SPACE","H","J","K","L"
+				],
+				"theme": "basiccorruption/default",
+				"debugMode": false,
+				"touchscreenmode": false,
+				"pauseOnLostFocus": true
 			};
 			var content = Json.stringify(options);
 			File.saveContent(oFPath, content);
@@ -72,8 +79,20 @@ class StateLoading extends FlxState
 			FlxG.fullscreen = json.fullscreen;
 			Reference.VOLUME_MULTIPLIER = json.audio.volumeM;
 			Reference.ASSET_GROUP = json.assetGroup;
+			Reference.LAST_MAP = json.lastMap;
+			FlxG.autoPause = json.pauseOnLostFocus;
 		}
 		trace("Finished loading options");
+
+		trace("Checking for updates available");
+		var cv = Checker.checkCurrentVersion();
+		var lv = Checker.checkLatestVersion();
+		trace("Current SoundSpace version: " + cv);
+		trace("Latest SoundSpace version: " + lv);
+		if (cv != lv) {
+			trace("Outdated version of SoundSpace being used; launching updater");
+		}
+
 		#end
 
 		onLoadComplete();
