@@ -97,5 +97,6 @@ class SoundSpace extends Sprite
 		var mID_0 = Json.stringify(mapTemp.id_0);
 		File.saveContent(Path.join([System.applicationStorageDirectory + "maps\\id_0\\", "./level.json"]), mID_0);
 		#end
+		return [mapTemp];
 	}
 }
