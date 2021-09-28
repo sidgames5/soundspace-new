@@ -36,3 +36,9 @@ Now to compile the game, go into the folder where Project.xml is and type `lime 
 - [BasicCorruption](https://github.com/BasicCorruption) - Sprites
 - [Feralkitty9](https://github.com/Feralkitty9) - Cursor sprite
 - [LeWolfYT](https://github.com/LeWolfYT) - SoundSpace app and Discord server logo, key and key clicked sprite
+
+### Music & SFX
+
+- [BasicCorruption](https://github.com/BasicCorruption) - OST1 Song Pack
+- [Feralkitty9](https://github.com/feralkitty9) - Sound effects
+- [GoodnessMC](about:blank) - Menu theme
