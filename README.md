@@ -18,7 +18,7 @@ haxelib install flixel-addons
 haxelib install hscript
 ```
 
-Now to compile the game, go into the folder where Project.xml is and type `lime test cpp` in the command prompt.
+Now to compile the game, go into the folder where Project.xml is and type `test` in the command prompt.
 
 ## Credits / shoutouts
 
