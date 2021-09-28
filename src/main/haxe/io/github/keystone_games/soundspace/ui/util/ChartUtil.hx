@@ -23,5 +23,9 @@ class ChartParser
 
 class ChartUtil
 {
-	public static function createMap(sInfo:{name:String, artist:String, album:String}, file:Path) {}
+	public static function createMap(sInfo:{name:String, artist:String, album:String}, file:Path) { }
+}
+
+class Timeline extends FlxState {
+	public override function create() { super.create(); }
 }
