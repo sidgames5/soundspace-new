@@ -1,7 +1,7 @@
 {
   "top": {
-    "latest-stable": "",
-    "latest-beta": "0.0.10",
+    "latest-stable": "0.0.0.0",
+    "latest-beta": "0.0.10.0",
     "latest-dev": "0.0.10.4",
     "recommended-stable": "",
     "recommended-beta": "0.0.10",
@@ -13,5 +13,8 @@
     "0.0.10.2",
     "0.0.10.1",
     "0.0.10.0"
+  ],
+  "unsupported-vers": [
+    "0.0.10"
   ]
 }
