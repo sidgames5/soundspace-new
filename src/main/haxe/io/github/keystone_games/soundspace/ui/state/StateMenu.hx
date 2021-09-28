@@ -1,5 +1,6 @@
 package io.github.keystone_games.soundspace.ui.state;
 
+import flixel.input.touch.FlxTouch;
 import flixel.input.FlxAccelerometer;
 import flixel.FlxSprite;
 import lime.system.System;
@@ -96,4 +97,6 @@ class StateMenu extends FlxState
 
 		FlxG.sound.volume = Reference.VOLUME_MULTIPLIER;
 	}
+
+	public static function makeBackground() {}
 }
