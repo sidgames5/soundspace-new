@@ -5,7 +5,7 @@ import lime.app.Application;
 class Reference {
     public static final APP_NAME:String = "SoundSpace";
     public static final APP_ID:String = "soundspace";
-    public static final VERSION = "0.0.10.4";
+    public static final VERSION = "{dev}";
 
     public static var VOLUME_MULTIPLIER:Float = 1;
     public static var ASSET_GROUP:String = "Default";
