@@ -6,6 +6,7 @@ This is the repository for the SoundSpace desktop app.
 
 First you need to install Haxe and HaxeFlixel.
 
+Linux users:
 ```
 sudo pacman -S haxe
 haxelib setup
