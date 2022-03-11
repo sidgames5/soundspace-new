@@ -3,7 +3,7 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="SoundSpace" file="SoundSpace" main="io.github.keystone_games.soundspace.SoundSpace" version="2022.3.11.1" company="Keystone Games" package="io.github.keystone_games.soundspace" />
+	<app title="SoundSpace" file="SoundSpace" main="io.github.keystone_games.soundspace.SoundSpace" version="" company="Keystone Games" package="io.github.keystone_games.soundspace" />
 	<app preloader="flixel.system.FlxPreloader" />
 	<set name="SWF_VERSION" value="11.8" />
 
