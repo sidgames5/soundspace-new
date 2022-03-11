@@ -1,5 +1,6 @@
 package io.github.keystone_games.soundspace;
 
+import io.github.keystone_games.soundspace.ui.scene.StateLoading;
 import flixel.FlxGame;
 import openfl.Lib;
 import flixel.FlxG;
