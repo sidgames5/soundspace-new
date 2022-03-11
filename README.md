@@ -18,6 +18,18 @@ haxelib install flixel-addons
 haxelib run lime setup flixel
 haxelib run lime setup
 ```
+Windows users:
+1. [Install Haxe](https://haxe.org/download/)
+2. [Install HaxeFlixel](https://haxeflixel.com/documentation/install-haxeflixel/) after downloading Haxe
+```
+haxelib install lime
+haxelib install openfl
+haxelib install flixel
+haxelib install flixel-ui
+haxelib install flixel-addons
+haxelib run lime setup flixel
+haxelib run lime setup
+```
 
 Now to compile the game, go into the folder where Project.xml is and type `lime test cpp` in the command prompt.
 Run the command on windows to generate a windows executable and run on linux to create a linux executable.
