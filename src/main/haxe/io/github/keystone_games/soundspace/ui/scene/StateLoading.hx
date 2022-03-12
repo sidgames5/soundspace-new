@@ -6,7 +6,7 @@ import flixel.FlxG;
 
 class StateLoading extends FlxState {
 	public static var bar:FlxSprite;
-  public static var bgLeft:Bool;
+	public static var bgLeft:Bool;
 
 	public override function create() {
 		super.create();
@@ -21,14 +21,16 @@ class StateLoading extends FlxState {
 	public override function update(dt:Float) {
 		super.update(dt);
 
-    switch (bgLeft) {
-      case true:
-        bar.x -= 1;
-      case false:
-        bar.x += 1;
-    }
-    if (bar.x > FlxG.width) bgLeft = true;
-    if (bar.x < 0) bgLeft = false;
-    trace(bar.x);
+		switch (bgLeft) {
+			case true:
+				bar.x -= 1;
+			case false:
+				bar.x += 1;
+		}
+		if (bar.x > FlxG.width - bar.width)
+			bgLeft = true;
+		if (bar.x < 0)
+			bgLeft = false;
+		trace(bar.x);
 	}
 }
