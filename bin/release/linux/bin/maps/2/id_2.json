@@ -1,0 +1,29 @@
+{
+    "song": {
+        "name": "Insane SoundSpace",
+        "artist": "LeWolfYT",
+        "mapper": "BasicCorruption",
+        "bpm": 300,
+        "album": "System Overload",
+        "pack": "others"
+    },
+    "mapUrl": "https://keystone-games.github.io/soundspace-site/maps/2/",
+    "map": {
+        "difficulty": [
+            {
+                "name": "Insane",
+                "id": 0,
+                "timing": {
+                    "unit": "bpm",
+                    "timeunit": "seconds"
+                }
+            },
+            {
+                "time": 0,
+                "effects": [
+                    "SMOKE_BOTTOM"
+                ]
+            }
+        ]
+    }
+}
