@@ -1,5 +1,7 @@
 package io.github.keystone_games.soundspace.ui.scene;
 
+import flixel.util.FlxColor;
+import flixel.text.FlxText;
 import flixel.FlxState;
 import flixel.FlxSprite;
 import flixel.FlxG;
@@ -7,6 +9,9 @@ import flixel.FlxG;
 class StateLoading extends FlxState {
 	public static var bar:FlxSprite;
 	public static var bgLeft:Bool;
+	public static var titleText:FlxText;
+	public static var lpc:Int = 1;
+	public static var lpcTimer:Float;
 
 	public override function create() {
 		super.create();
@@ -16,6 +21,11 @@ class StateLoading extends FlxState {
 		bar.screenCenter(Y);
 		bar.x = 0;
 		add(bar);
+
+		titleText = new FlxText(0, 0, 0, "Loading.").setFormat(null, 32, FlxColor.WHITE, CENTER);
+		titleText.screenCenter(X);
+		titleText.y = FlxG.height / 8;
+		add(titleText);
 	}
 
 	public override function update(dt:Float) {
@@ -23,14 +33,33 @@ class StateLoading extends FlxState {
 
 		switch (bgLeft) {
 			case true:
-				bar.x -= 1;
+				bar.x -= 5;
 			case false:
-				bar.x += 1;
+				bar.x += 5;
 		}
 		if (bar.x > FlxG.width - bar.width)
 			bgLeft = true;
 		if (bar.x < 0)
 			bgLeft = false;
 		trace(bar.x);
+
+		lpcTimer += dt;
+		trace(lpcTimer);
+		if (lpcTimer >= (1/3)) {
+			if (lpc == 3) {
+				lpc = 1;
+			} else {
+				lpc++;
+			}
+			lpcTimer = 0;
+			switch (lpc) {
+				case 1:
+					titleText.text = "Loading.";
+				case 2:
+					titleText.text = "Loading..";
+				case 3:
+					titleText.text = "Loading...";
+			}
+		}
 	}
 }
