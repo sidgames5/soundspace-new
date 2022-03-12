@@ -55,17 +55,17 @@ class HXCPP_CLASS_ATTRIBUTES FlxArrayUtil_obj : public hx::Object
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("FlxArrayUtil",89,7b,08,b4); }
 
-		static ::Array< ::Dynamic> fastSplice_flixel_tweens_FlxTween(::Array< ::Dynamic> array, ::flixel::tweens::FlxTween element);
-		static ::Dynamic fastSplice_flixel_tweens_FlxTween_dyn();
-
-		static ::Array< ::Dynamic> fastSplice_flixel_util_FlxTimer(::Array< ::Dynamic> array, ::flixel::util::FlxTimer element);
-		static ::Dynamic fastSplice_flixel_util_FlxTimer_dyn();
-
 		static ::Array< int > setLength_Int(::Array< int > array,int newLength);
 		static ::Dynamic setLength_Int_dyn();
 
 		static ::Array< int > flatten2DArray_Int(::Array< ::Dynamic> array);
 		static ::Dynamic flatten2DArray_Int_dyn();
+
+		static ::Array< ::Dynamic> fastSplice_flixel_tweens_FlxTween(::Array< ::Dynamic> array, ::flixel::tweens::FlxTween element);
+		static ::Dynamic fastSplice_flixel_tweens_FlxTween_dyn();
+
+		static ::Array< ::Dynamic> fastSplice_flixel_util_FlxTimer(::Array< ::Dynamic> array, ::flixel::util::FlxTimer element);
+		static ::Dynamic fastSplice_flixel_util_FlxTimer_dyn();
 
 		static ::cpp::VirtualArray swapAndPop_fastSplice_T(::cpp::VirtualArray array,int index);
 		static ::Dynamic swapAndPop_fastSplice_T_dyn();

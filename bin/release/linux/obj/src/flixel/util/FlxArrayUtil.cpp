@@ -20,10 +20,10 @@
 #include <flixel/util/IFlxDestroyable.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_80883519d7ae1644_47_fastSplice_flixel_tweens_FlxTween,"flixel.util.FlxArrayUtil","fastSplice_flixel_tweens_FlxTween",0x134d3569,"flixel.util.FlxArrayUtil.fastSplice_flixel_tweens_FlxTween","flixel/util/FlxArrayUtil.hx",47,0xa0dc755b)
-HX_LOCAL_STACK_FRAME(_hx_pos_80883519d7ae1644_47_fastSplice_flixel_util_FlxTimer,"flixel.util.FlxArrayUtil","fastSplice_flixel_util_FlxTimer",0x46676ae9,"flixel.util.FlxArrayUtil.fastSplice_flixel_util_FlxTimer","flixel/util/FlxArrayUtil.hx",47,0xa0dc755b)
 HX_LOCAL_STACK_FRAME(_hx_pos_80883519d7ae1644_16_setLength_Int,"flixel.util.FlxArrayUtil","setLength_Int",0x3efc372d,"flixel.util.FlxArrayUtil.setLength_Int","flixel/util/FlxArrayUtil.hx",16,0xa0dc755b)
 HX_LOCAL_STACK_FRAME(_hx_pos_80883519d7ae1644_122_flatten2DArray_Int,"flixel.util.FlxArrayUtil","flatten2DArray_Int",0x9867551e,"flixel.util.FlxArrayUtil.flatten2DArray_Int","flixel/util/FlxArrayUtil.hx",122,0xa0dc755b)
+HX_LOCAL_STACK_FRAME(_hx_pos_80883519d7ae1644_47_fastSplice_flixel_tweens_FlxTween,"flixel.util.FlxArrayUtil","fastSplice_flixel_tweens_FlxTween",0x134d3569,"flixel.util.FlxArrayUtil.fastSplice_flixel_tweens_FlxTween","flixel/util/FlxArrayUtil.hx",47,0xa0dc755b)
+HX_LOCAL_STACK_FRAME(_hx_pos_80883519d7ae1644_47_fastSplice_flixel_util_FlxTimer,"flixel.util.FlxArrayUtil","fastSplice_flixel_util_FlxTimer",0x46676ae9,"flixel.util.FlxArrayUtil.fastSplice_flixel_util_FlxTimer","flixel/util/FlxArrayUtil.hx",47,0xa0dc755b)
 HX_LOCAL_STACK_FRAME(_hx_pos_80883519d7ae1644_79_swapAndPop_fastSplice_T,"flixel.util.FlxArrayUtil","swapAndPop_fastSplice_T",0xfdfa2694,"flixel.util.FlxArrayUtil.swapAndPop_fastSplice_T","flixel/util/FlxArrayUtil.hx",79,0xa0dc755b)
 HX_LOCAL_STACK_FRAME(_hx_pos_80883519d7ae1644_16_setLength_flixel_system_replay_FrameRecord,"flixel.util.FlxArrayUtil","setLength_flixel_system_replay_FrameRecord",0x79844eb5,"flixel.util.FlxArrayUtil.setLength_flixel_system_replay_FrameRecord","flixel/util/FlxArrayUtil.hx",16,0xa0dc755b)
 HX_LOCAL_STACK_FRAME(_hx_pos_80883519d7ae1644_16_setLength_flixel_group_FlxTypedGroup_T,"flixel.util.FlxArrayUtil","setLength_flixel_group_FlxTypedGroup_T",0x1139627b,"flixel.util.FlxArrayUtil.setLength_flixel_group_FlxTypedGroup_T","flixel/util/FlxArrayUtil.hx",16,0xa0dc755b)
@@ -51,34 +51,6 @@ Dynamic FlxArrayUtil_obj::__Create(hx::DynamicArray inArgs)
 bool FlxArrayUtil_obj::_hx_isInstanceOf(int inClassId) {
 	return inClassId==(int)0x00000001 || inClassId==(int)0x0a2d4e4b;
 }
-
-::Array< ::Dynamic> FlxArrayUtil_obj::fastSplice_flixel_tweens_FlxTween(::Array< ::Dynamic> array, ::flixel::tweens::FlxTween element){
-            	HX_STACKFRAME(&_hx_pos_80883519d7ae1644_47_fastSplice_flixel_tweens_FlxTween)
-HXLINE(  48)		int index = array->indexOf(element,null());
-HXLINE(  49)		if ((index != -1)) {
-HXLINE(  50)			array[index] = array->__get((array->length - 1)).StaticCast<  ::flixel::tweens::FlxTween >();
-HXDLIN(  50)			array->pop().StaticCast<  ::flixel::tweens::FlxTween >();
-HXDLIN(  50)			return array;
-            		}
-HXLINE(  51)		return array;
-            	}
-
-
-STATIC_HX_DEFINE_DYNAMIC_FUNC2(FlxArrayUtil_obj,fastSplice_flixel_tweens_FlxTween,return )
-
-::Array< ::Dynamic> FlxArrayUtil_obj::fastSplice_flixel_util_FlxTimer(::Array< ::Dynamic> array, ::flixel::util::FlxTimer element){
-            	HX_STACKFRAME(&_hx_pos_80883519d7ae1644_47_fastSplice_flixel_util_FlxTimer)
-HXLINE(  48)		int index = array->indexOf(element,null());
-HXLINE(  49)		if ((index != -1)) {
-HXLINE(  50)			array[index] = array->__get((array->length - 1)).StaticCast<  ::flixel::util::FlxTimer >();
-HXDLIN(  50)			array->pop().StaticCast<  ::flixel::util::FlxTimer >();
-HXDLIN(  50)			return array;
-            		}
-HXLINE(  51)		return array;
-            	}
-
-
-STATIC_HX_DEFINE_DYNAMIC_FUNC2(FlxArrayUtil_obj,fastSplice_flixel_util_FlxTimer,return )
 
 ::Array< int > FlxArrayUtil_obj::setLength_Int(::Array< int > array,int newLength){
             	HX_STACKFRAME(&_hx_pos_80883519d7ae1644_16_setLength_Int)
@@ -129,6 +101,34 @@ HXLINE( 127)		return result;
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(FlxArrayUtil_obj,flatten2DArray_Int,return )
+
+::Array< ::Dynamic> FlxArrayUtil_obj::fastSplice_flixel_tweens_FlxTween(::Array< ::Dynamic> array, ::flixel::tweens::FlxTween element){
+            	HX_STACKFRAME(&_hx_pos_80883519d7ae1644_47_fastSplice_flixel_tweens_FlxTween)
+HXLINE(  48)		int index = array->indexOf(element,null());
+HXLINE(  49)		if ((index != -1)) {
+HXLINE(  50)			array[index] = array->__get((array->length - 1)).StaticCast<  ::flixel::tweens::FlxTween >();
+HXDLIN(  50)			array->pop().StaticCast<  ::flixel::tweens::FlxTween >();
+HXDLIN(  50)			return array;
+            		}
+HXLINE(  51)		return array;
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC2(FlxArrayUtil_obj,fastSplice_flixel_tweens_FlxTween,return )
+
+::Array< ::Dynamic> FlxArrayUtil_obj::fastSplice_flixel_util_FlxTimer(::Array< ::Dynamic> array, ::flixel::util::FlxTimer element){
+            	HX_STACKFRAME(&_hx_pos_80883519d7ae1644_47_fastSplice_flixel_util_FlxTimer)
+HXLINE(  48)		int index = array->indexOf(element,null());
+HXLINE(  49)		if ((index != -1)) {
+HXLINE(  50)			array[index] = array->__get((array->length - 1)).StaticCast<  ::flixel::util::FlxTimer >();
+HXDLIN(  50)			array->pop().StaticCast<  ::flixel::util::FlxTimer >();
+HXDLIN(  50)			return array;
+            		}
+HXLINE(  51)		return array;
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC2(FlxArrayUtil_obj,fastSplice_flixel_util_FlxTimer,return )
 
 ::cpp::VirtualArray FlxArrayUtil_obj::swapAndPop_fastSplice_T(::cpp::VirtualArray array,int index){
             	HX_STACKFRAME(&_hx_pos_80883519d7ae1644_79_swapAndPop_fastSplice_T)
@@ -360,10 +360,10 @@ static hx::StaticInfo *FlxArrayUtil_obj_sStaticStorageInfo = 0;
 hx::Class FlxArrayUtil_obj::__mClass;
 
 static ::String FlxArrayUtil_obj_sStaticFields[] = {
-	HX_("fastSplice_flixel_tweens_FlxTween",b4,8d,a9,b9),
-	HX_("fastSplice_flixel_util_FlxTimer",74,8a,94,6f),
 	HX_("setLength_Int",f8,47,06,cb),
 	HX_("flatten2DArray_Int",73,84,55,08),
+	HX_("fastSplice_flixel_tweens_FlxTween",b4,8d,a9,b9),
+	HX_("fastSplice_flixel_util_FlxTimer",74,8a,94,6f),
 	HX_("swapAndPop_fastSplice_T",1f,43,97,d1),
 	HX_("setLength_flixel_system_replay_FrameRecord",0a,15,ae,16),
 	HX_("setLength_flixel_group_FlxTypedGroup_T",50,1a,e2,41),

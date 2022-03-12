@@ -172,7 +172,7 @@ HXLINE( 116)			::ApplicationMain_obj::start(stage);
             	HX_GC_STACKFRAME(&_hx_pos_6fcf922b66429816_30_create)
 HXLINE(  31)		 ::openfl::display::Application app =  ::openfl::display::Application_obj::__alloc( HX_CTX );
 HXLINE(  33)		::ManifestResources_obj::init(config);
-HXLINE(  35)		app->meta->set(HX_("build",2e,db,ea,ba),HX_("63",3d,2f,00,00));
+HXLINE(  35)		app->meta->set(HX_("build",2e,db,ea,ba),HX_("66",40,2f,00,00));
 HXLINE(  36)		app->meta->set(HX_("company",3d,15,69,83),HX_("Keystone Games",07,27,7d,06));
 HXLINE(  37)		app->meta->set(HX_("file",7c,ce,bb,43),HX_("SoundSpace",97,a5,5c,e1));
 HXLINE(  38)		app->meta->set(HX_("name",4b,72,ff,48),HX_("SoundSpace",97,a5,5c,e1));

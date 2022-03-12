@@ -19,6 +19,12 @@
 #ifndef INCLUDED_flixel_group_FlxTypedGroup
 #include <flixel/group/FlxTypedGroup.h>
 #endif
+#ifndef INCLUDED_flixel_text_FlxText
+#include <flixel/text/FlxText.h>
+#endif
+#ifndef INCLUDED_flixel_text_FlxTextBorderStyle
+#include <flixel/text/FlxTextBorderStyle.h>
+#endif
 #ifndef INCLUDED_flixel_util_FlxAxes
 #include <flixel/util/FlxAxes.h>
 #endif
@@ -32,9 +38,10 @@
 #include <io/github/keystone_games/soundspace/ui/scene/StateLoading.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_630977beb92d0210_7_new,"io.github.keystone_games.soundspace.ui.scene.StateLoading","new",0xe61ddee5,"io.github.keystone_games.soundspace.ui.scene.StateLoading.new","io/github/keystone_games/soundspace/ui/scene/StateLoading.hx",7,0x82b9ff69)
-HX_LOCAL_STACK_FRAME(_hx_pos_630977beb92d0210_11_create,"io.github.keystone_games.soundspace.ui.scene.StateLoading","create",0x696b7997,"io.github.keystone_games.soundspace.ui.scene.StateLoading.create","io/github/keystone_games/soundspace/ui/scene/StateLoading.hx",11,0x82b9ff69)
-HX_LOCAL_STACK_FRAME(_hx_pos_630977beb92d0210_21_update,"io.github.keystone_games.soundspace.ui.scene.StateLoading","update",0x746198a4,"io.github.keystone_games.soundspace.ui.scene.StateLoading.update","io/github/keystone_games/soundspace/ui/scene/StateLoading.hx",21,0x82b9ff69)
+HX_DEFINE_STACK_FRAME(_hx_pos_630977beb92d0210_9_new,"io.github.keystone_games.soundspace.ui.scene.StateLoading","new",0xe61ddee5,"io.github.keystone_games.soundspace.ui.scene.StateLoading.new","io/github/keystone_games/soundspace/ui/scene/StateLoading.hx",9,0x82b9ff69)
+HX_LOCAL_STACK_FRAME(_hx_pos_630977beb92d0210_16_create,"io.github.keystone_games.soundspace.ui.scene.StateLoading","create",0x696b7997,"io.github.keystone_games.soundspace.ui.scene.StateLoading.create","io/github/keystone_games/soundspace/ui/scene/StateLoading.hx",16,0x82b9ff69)
+HX_LOCAL_STACK_FRAME(_hx_pos_630977beb92d0210_31_update,"io.github.keystone_games.soundspace.ui.scene.StateLoading","update",0x746198a4,"io.github.keystone_games.soundspace.ui.scene.StateLoading.update","io/github/keystone_games/soundspace/ui/scene/StateLoading.hx",31,0x82b9ff69)
+HX_LOCAL_STACK_FRAME(_hx_pos_630977beb92d0210_13_boot,"io.github.keystone_games.soundspace.ui.scene.StateLoading","boot",0x6c1e2a0d,"io.github.keystone_games.soundspace.ui.scene.StateLoading.boot","io/github/keystone_games/soundspace/ui/scene/StateLoading.hx",13,0x82b9ff69)
 namespace io{
 namespace github{
 namespace keystone_games{
@@ -43,8 +50,8 @@ namespace ui{
 namespace scene{
 
 void StateLoading_obj::__construct( ::Dynamic MaxSize){
-            	HX_STACKFRAME(&_hx_pos_630977beb92d0210_7_new)
-HXDLIN(   7)		super::__construct(MaxSize);
+            	HX_STACKFRAME(&_hx_pos_630977beb92d0210_9_new)
+HXDLIN(   9)		super::__construct(MaxSize);
             	}
 
 Dynamic StateLoading_obj::__CreateEmpty() { return new StateLoading_obj; }
@@ -71,76 +78,146 @@ bool StateLoading_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void StateLoading_obj::create(){
-            	HX_GC_STACKFRAME(&_hx_pos_630977beb92d0210_11_create)
-HXLINE(  12)		this->super::create();
-HXLINE(  14)		::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
-HXLINE(  15)		::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->makeGraphic(64,64,null(),null(),null());
-HXLINE(  16)		{
-HXLINE(  16)			 ::flixel::FlxSprite _this = ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar;
-HXDLIN(  16)			 ::flixel::util::FlxAxes axes = ::flixel::util::FlxAxes_obj::Y_dyn();
+            	HX_GC_STACKFRAME(&_hx_pos_630977beb92d0210_16_create)
+HXLINE(  17)		this->super::create();
+HXLINE(  19)		::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
+HXLINE(  20)		::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->makeGraphic(64,64,null(),null(),null());
+HXLINE(  21)		{
+HXLINE(  21)			 ::flixel::FlxSprite _this = ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar;
+HXDLIN(  21)			 ::flixel::util::FlxAxes axes = ::flixel::util::FlxAxes_obj::Y_dyn();
 HXLINE(1070)			if (hx::IsNull( axes )) {
 HXLINE(1070)				axes = ::flixel::util::FlxAxes_obj::XY_dyn();
             			}
-HXLINE(  16)			bool _hx_tmp;
-HXDLIN(  16)			switch((int)(axes->_hx_getIndex())){
+HXLINE(  21)			bool _hx_tmp;
+HXDLIN(  21)			switch((int)(axes->_hx_getIndex())){
             				case (int)0: case (int)2: {
-HXLINE(  16)					_hx_tmp = true;
+HXLINE(  21)					_hx_tmp = true;
             				}
             				break;
             				default:{
-HXLINE(  16)					_hx_tmp = false;
+HXLINE(  21)					_hx_tmp = false;
             				}
             			}
-HXDLIN(  16)			if (_hx_tmp) {
-HXLINE(  16)				int _hx_tmp1 = ::flixel::FlxG_obj::width;
-HXDLIN(  16)				_this->set_x(((( (Float)(_hx_tmp1) ) - _this->get_width()) / ( (Float)(2) )));
+HXDLIN(  21)			if (_hx_tmp) {
+HXLINE(  21)				int _hx_tmp1 = ::flixel::FlxG_obj::width;
+HXDLIN(  21)				_this->set_x(((( (Float)(_hx_tmp1) ) - _this->get_width()) / ( (Float)(2) )));
             			}
-HXDLIN(  16)			bool _hx_tmp2;
-HXDLIN(  16)			switch((int)(axes->_hx_getIndex())){
+HXDLIN(  21)			bool _hx_tmp2;
+HXDLIN(  21)			switch((int)(axes->_hx_getIndex())){
             				case (int)1: case (int)2: {
-HXLINE(  16)					_hx_tmp2 = true;
+HXLINE(  21)					_hx_tmp2 = true;
             				}
             				break;
             				default:{
-HXLINE(  16)					_hx_tmp2 = false;
+HXLINE(  21)					_hx_tmp2 = false;
             				}
             			}
-HXDLIN(  16)			if (_hx_tmp2) {
-HXLINE(  16)				int _hx_tmp3 = ::flixel::FlxG_obj::height;
-HXDLIN(  16)				_this->set_y(((( (Float)(_hx_tmp3) ) - _this->get_height()) / ( (Float)(2) )));
+HXDLIN(  21)			if (_hx_tmp2) {
+HXLINE(  21)				int _hx_tmp3 = ::flixel::FlxG_obj::height;
+HXDLIN(  21)				_this->set_y(((( (Float)(_hx_tmp3) ) - _this->get_height()) / ( (Float)(2) )));
             			}
             		}
-HXLINE(  17)		::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->set_x(( (Float)(0) ));
-HXLINE(  18)		this->add(::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar);
+HXLINE(  22)		::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->set_x(( (Float)(0) ));
+HXLINE(  23)		this->add(::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar);
+HXLINE(  25)		::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::titleText =  ::flixel::text::FlxText_obj::__alloc( HX_CTX ,0,0,0,HX_("Loading.",52,9a,33,a5),null(),null())->setFormat(null(),32,-1,HX_("center",d5,25,db,05),null(),null(),null());
+HXLINE(  26)		{
+HXLINE(  26)			 ::flixel::text::FlxText _this1 = ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::titleText;
+HXDLIN(  26)			 ::flixel::util::FlxAxes axes1 = ::flixel::util::FlxAxes_obj::X_dyn();
+HXLINE(1070)			if (hx::IsNull( axes1 )) {
+HXLINE(1070)				axes1 = ::flixel::util::FlxAxes_obj::XY_dyn();
+            			}
+HXLINE(  26)			bool _hx_tmp4;
+HXDLIN(  26)			switch((int)(axes1->_hx_getIndex())){
+            				case (int)0: case (int)2: {
+HXLINE(  26)					_hx_tmp4 = true;
+            				}
+            				break;
+            				default:{
+HXLINE(  26)					_hx_tmp4 = false;
+            				}
+            			}
+HXDLIN(  26)			if (_hx_tmp4) {
+HXLINE(  26)				int _hx_tmp5 = ::flixel::FlxG_obj::width;
+HXDLIN(  26)				_this1->set_x(((( (Float)(_hx_tmp5) ) - _this1->get_width()) / ( (Float)(2) )));
+            			}
+HXDLIN(  26)			bool _hx_tmp6;
+HXDLIN(  26)			switch((int)(axes1->_hx_getIndex())){
+            				case (int)1: case (int)2: {
+HXLINE(  26)					_hx_tmp6 = true;
+            				}
+            				break;
+            				default:{
+HXLINE(  26)					_hx_tmp6 = false;
+            				}
+            			}
+HXDLIN(  26)			if (_hx_tmp6) {
+HXLINE(  26)				int _hx_tmp7 = ::flixel::FlxG_obj::height;
+HXDLIN(  26)				_this1->set_y(((( (Float)(_hx_tmp7) ) - _this1->get_height()) / ( (Float)(2) )));
+            			}
+            		}
+HXLINE(  27)		::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::titleText->set_y((( (Float)(::flixel::FlxG_obj::height) ) / ( (Float)(8) )));
+HXLINE(  28)		this->add(::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::titleText);
             	}
 
 
 void StateLoading_obj::update(Float dt){
-            	HX_STACKFRAME(&_hx_pos_630977beb92d0210_21_update)
-HXLINE(  22)		this->super::update(dt);
-HXLINE(  24)		if (::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bgLeft) {
-HXLINE(  26)			 ::flixel::FlxSprite _g = ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar;
-HXDLIN(  26)			_g->set_x((_g->x - ( (Float)(10) )));
+            	HX_STACKFRAME(&_hx_pos_630977beb92d0210_31_update)
+HXLINE(  32)		this->super::update(dt);
+HXLINE(  34)		if (::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bgLeft) {
+HXLINE(  36)			 ::flixel::FlxSprite _g = ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar;
+HXDLIN(  36)			_g->set_x((_g->x - ( (Float)(5) )));
             		}
             		else {
-HXLINE(  28)			 ::flixel::FlxSprite _g1 = ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar;
-HXDLIN(  28)			_g1->set_x((_g1->x + 10));
+HXLINE(  38)			 ::flixel::FlxSprite _g1 = ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar;
+HXDLIN(  38)			_g1->set_x((_g1->x + 5));
             		}
-HXLINE(  30)		Float _hx_tmp = ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->x;
-HXDLIN(  30)		int _hx_tmp1 = ::flixel::FlxG_obj::width;
-HXDLIN(  30)		if ((_hx_tmp > (( (Float)(_hx_tmp1) ) - ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->get_width()))) {
-HXLINE(  31)			::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bgLeft = true;
+HXLINE(  40)		Float _hx_tmp = ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->x;
+HXDLIN(  40)		int _hx_tmp1 = ::flixel::FlxG_obj::width;
+HXDLIN(  40)		if ((_hx_tmp > (( (Float)(_hx_tmp1) ) - ::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->get_width()))) {
+HXLINE(  41)			::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bgLeft = true;
             		}
-HXLINE(  32)		if ((::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->x < 0)) {
-HXLINE(  33)			::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bgLeft = false;
+HXLINE(  42)		if ((::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->x < 0)) {
+HXLINE(  43)			::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bgLeft = false;
             		}
-HXLINE(  34)		::haxe::Log_obj::trace(::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->x,hx::SourceInfo(HX_("src/main/haxe/io/github/keystone_games/soundspace/ui/scene/StateLoading.hx",a7,70,0d,f3),34,HX_("io.github.keystone_games.soundspace.ui.scene.StateLoading",73,88,e9,e8),HX_("update",09,86,05,87)));
+HXLINE(  44)		::haxe::Log_obj::trace(::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::bar->x,hx::SourceInfo(HX_("src/main/haxe/io/github/keystone_games/soundspace/ui/scene/StateLoading.hx",a7,70,0d,f3),44,HX_("io.github.keystone_games.soundspace.ui.scene.StateLoading",73,88,e9,e8),HX_("update",09,86,05,87)));
+HXLINE(  46)		 ::Dynamic _hx_tmp2 = hx::ClassOf< ::io::github::keystone_games::soundspace::ui::scene::StateLoading >();
+HXDLIN(  46)		::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::lpcTimer = (::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::lpcTimer + dt);
+HXLINE(  47)		::haxe::Log_obj::trace(::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::lpcTimer,hx::SourceInfo(HX_("src/main/haxe/io/github/keystone_games/soundspace/ui/scene/StateLoading.hx",a7,70,0d,f3),47,HX_("io.github.keystone_games.soundspace.ui.scene.StateLoading",73,88,e9,e8),HX_("update",09,86,05,87)));
+HXLINE(  48)		if ((::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::lpcTimer >= ((Float)0.333333333333333315))) {
+HXLINE(  49)			if ((::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::lpc == 3)) {
+HXLINE(  50)				::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::lpc = 1;
+            			}
+            			else {
+HXLINE(  52)				::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::lpc++;
+            			}
+HXLINE(  54)			::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::lpcTimer = ( (Float)(0) );
+HXLINE(  55)			switch((int)(::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::lpc)){
+            				case (int)1: {
+HXLINE(  57)					::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::titleText->set_text(HX_("Loading.",52,9a,33,a5));
+            				}
+            				break;
+            				case (int)2: {
+HXLINE(  59)					::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::titleText->set_text(HX_("Loading..",9c,6d,f3,e7));
+            				}
+            				break;
+            				case (int)3: {
+HXLINE(  61)					::io::github::keystone_games::soundspace::ui::scene::StateLoading_obj::titleText->set_text(HX_("Loading...",12,7b,0c,0d));
+            				}
+            				break;
+            			}
+            		}
             	}
 
 
  ::flixel::FlxSprite StateLoading_obj::bar;
 
 bool StateLoading_obj::bgLeft;
+
+ ::flixel::text::FlxText StateLoading_obj::titleText;
+
+int StateLoading_obj::lpc;
+
+Float StateLoading_obj::lpcTimer;
 
 
 hx::ObjectPtr< StateLoading_obj > StateLoading_obj::__new( ::Dynamic MaxSize) {
@@ -175,9 +252,16 @@ bool StateLoading_obj::__GetStatic(const ::String &inName, Dynamic &outValue, hx
 	switch(inName.length) {
 	case 3:
 		if (HX_FIELD_EQ(inName,"bar") ) { outValue = ( bar ); return true; }
+		if (HX_FIELD_EQ(inName,"lpc") ) { outValue = ( lpc ); return true; }
 		break;
 	case 6:
 		if (HX_FIELD_EQ(inName,"bgLeft") ) { outValue = ( bgLeft ); return true; }
+		break;
+	case 8:
+		if (HX_FIELD_EQ(inName,"lpcTimer") ) { outValue = ( lpcTimer ); return true; }
+		break;
+	case 9:
+		if (HX_FIELD_EQ(inName,"titleText") ) { outValue = ( titleText ); return true; }
 	}
 	return false;
 }
@@ -187,9 +271,16 @@ bool StateLoading_obj::__SetStatic(const ::String &inName,Dynamic &ioValue,hx::P
 	switch(inName.length) {
 	case 3:
 		if (HX_FIELD_EQ(inName,"bar") ) { bar=ioValue.Cast<  ::flixel::FlxSprite >(); return true; }
+		if (HX_FIELD_EQ(inName,"lpc") ) { lpc=ioValue.Cast< int >(); return true; }
 		break;
 	case 6:
 		if (HX_FIELD_EQ(inName,"bgLeft") ) { bgLeft=ioValue.Cast< bool >(); return true; }
+		break;
+	case 8:
+		if (HX_FIELD_EQ(inName,"lpcTimer") ) { lpcTimer=ioValue.Cast< Float >(); return true; }
+		break;
+	case 9:
+		if (HX_FIELD_EQ(inName,"titleText") ) { titleText=ioValue.Cast<  ::flixel::text::FlxText >(); return true; }
 	}
 	return false;
 }
@@ -199,6 +290,9 @@ static hx::StorageInfo *StateLoading_obj_sMemberStorageInfo = 0;
 static hx::StaticInfo StateLoading_obj_sStaticStorageInfo[] = {
 	{hx::fsObject /*  ::flixel::FlxSprite */ ,(void *) &StateLoading_obj::bar,HX_("bar",d3,b1,4a,00)},
 	{hx::fsBool,(void *) &StateLoading_obj::bgLeft,HX_("bgLeft",6c,50,c8,af)},
+	{hx::fsObject /*  ::flixel::text::FlxText */ ,(void *) &StateLoading_obj::titleText,HX_("titleText",65,ba,a4,70)},
+	{hx::fsInt,(void *) &StateLoading_obj::lpc,HX_("lpc",5f,55,52,00)},
+	{hx::fsFloat,(void *) &StateLoading_obj::lpcTimer,HX_("lpcTimer",e6,01,64,8b)},
 	{ hx::fsUnknown, 0, null()}
 };
 #endif
@@ -211,12 +305,18 @@ static ::String StateLoading_obj_sMemberFields[] = {
 static void StateLoading_obj_sMarkStatics(HX_MARK_PARAMS) {
 	HX_MARK_MEMBER_NAME(StateLoading_obj::bar,"bar");
 	HX_MARK_MEMBER_NAME(StateLoading_obj::bgLeft,"bgLeft");
+	HX_MARK_MEMBER_NAME(StateLoading_obj::titleText,"titleText");
+	HX_MARK_MEMBER_NAME(StateLoading_obj::lpc,"lpc");
+	HX_MARK_MEMBER_NAME(StateLoading_obj::lpcTimer,"lpcTimer");
 };
 
 #ifdef HXCPP_VISIT_ALLOCS
 static void StateLoading_obj_sVisitStatics(HX_VISIT_PARAMS) {
 	HX_VISIT_MEMBER_NAME(StateLoading_obj::bar,"bar");
 	HX_VISIT_MEMBER_NAME(StateLoading_obj::bgLeft,"bgLeft");
+	HX_VISIT_MEMBER_NAME(StateLoading_obj::titleText,"titleText");
+	HX_VISIT_MEMBER_NAME(StateLoading_obj::lpc,"lpc");
+	HX_VISIT_MEMBER_NAME(StateLoading_obj::lpcTimer,"lpcTimer");
 };
 
 #endif
@@ -226,6 +326,9 @@ hx::Class StateLoading_obj::__mClass;
 static ::String StateLoading_obj_sStaticFields[] = {
 	HX_("bar",d3,b1,4a,00),
 	HX_("bgLeft",6c,50,c8,af),
+	HX_("titleText",65,ba,a4,70),
+	HX_("lpc",5f,55,52,00),
+	HX_("lpcTimer",e6,01,64,8b),
 	::String(null())
 };
 
@@ -254,6 +357,14 @@ void StateLoading_obj::__register()
 	__mClass->mStaticStorageInfo = StateLoading_obj_sStaticStorageInfo;
 #endif
 	hx::_hx_RegisterClass(__mClass->mName, __mClass);
+}
+
+void StateLoading_obj::__boot()
+{
+{
+            	HX_STACKFRAME(&_hx_pos_630977beb92d0210_13_boot)
+HXDLIN(  13)		lpc = 1;
+            	}
 }
 
 } // end namespace io

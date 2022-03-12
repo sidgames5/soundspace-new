@@ -14,6 +14,7 @@ HX_DECLARE_CLASS1(flixel,FlxObject)
 HX_DECLARE_CLASS1(flixel,FlxSprite)
 HX_DECLARE_CLASS1(flixel,FlxState)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
+HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 HX_DECLARE_CLASS6(io,github,keystone_games,soundspace,ui,scene,StateLoading)
 
@@ -55,8 +56,12 @@ class HXCPP_CLASS_ATTRIBUTES StateLoading_obj : public  ::flixel::FlxState_obj
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("StateLoading",8b,20,9f,8e); }
 
+		static void __boot();
 		static  ::flixel::FlxSprite bar;
 		static bool bgLeft;
+		static  ::flixel::text::FlxText titleText;
+		static int lpc;
+		static Float lpcTimer;
 		void create();
 
 		void update(Float dt);
