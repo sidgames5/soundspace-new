@@ -7,9 +7,13 @@ import flixel.FlxState;
 
 class StateModeList extends FlxState {
     public static var titleText:FlxText;
-    
+
     public override function create() {
         super.create();
+
+        titleText = new FlxText(0, 0, 0, "Select a Mode").setFormat(null, 64, FlxColor.WHITE, CENTER);
+        titleText.screenCenter(X);
+        add(titleText);
     }
     public override function update(dt:Float) {
         super.update(dt);

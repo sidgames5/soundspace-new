@@ -23,7 +23,7 @@ class StateMenu extends FlxState {
 		titleText.screenCenter(X);
 		add(titleText);
 
-		playButton = new FlxSprite();
+		playButton = new FlxSprite(0, 0, Assets.PlaySND_1__png);
 		playButton.screenCenter(XY);
 		add(playButton);
 	}
