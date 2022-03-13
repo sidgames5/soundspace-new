@@ -89,7 +89,7 @@ class Logger
 	public static function error(Error:String, Location:String)
 	{
 		#if sys
-		Sys.stderr('Error: $Error at $Location');
+		Console.log("Error: " + Error + " at " + Location);
 		#end
 
 		var p = Path.join([logDir, logFile]);

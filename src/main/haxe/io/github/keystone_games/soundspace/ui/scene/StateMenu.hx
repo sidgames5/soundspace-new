@@ -1,7 +1,5 @@
 package io.github.keystone_games.soundspace.ui.scene;
 
-import lime.system.System;
-import openfl.display.FPS;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.util.FlxColor;
