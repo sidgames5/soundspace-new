@@ -1,5 +1,6 @@
 package io.github.keystone_games.soundspace;
 
+import io.github.keystone_games.soundspace.ui.scene.StateMenu;
 import io.github.keystone_games.soundspace.ui.scene.StateLoading;
 import flixel.FlxGame;
 import openfl.Lib;
@@ -26,7 +27,7 @@ class SoundSpace extends Sprite
 	}
 	
 	public static function postInit() {
-		Lib.current.addChild(new FlxGame(0, 0, #if html5 StateMenu #else StateLoading #end, 1, 240, 165, false, false));
+		Lib.current.addChild(new FlxGame(0, 0, #if html5 StateMenu #else StateLoading #end, 1, 120, 120, false, false));
 		trace("Playing menu music");
 		FlxG.sound.playMusic(Data.Menu__wav, Reference.VOLUME_MULTIPLIER, true);
 		trace("Music now playing: " + Data.Menu__wav);
