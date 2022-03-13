@@ -1,5 +1,7 @@
 package io.github.keystone_games.soundspace.ui.scene;
 
+import lime.system.System;
+import openfl.display.FPS;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.util.FlxColor;
@@ -14,6 +16,9 @@ class StateMenu extends FlxState {
 	public override function create() {
 		super.create();
 
+		FlxG.updateFramerate = 15;
+		FlxG.drawFramerate = 15;
+
 		titleText = new FlxText(0, 0, 0, "SoundSpace").setFormat(null, 64, FlxColor.WHITE);
 		titleText.screenCenter(X);
 		add(titleText);
@@ -25,6 +30,11 @@ class StateMenu extends FlxState {
 
 	public override function update(dt:Float) {
 		super.update(dt);
+
+		if (FlxG.mouse.justMoved) {
+			FlxG.updateFramerate = 30;
+			FlxG.drawFramerate = 30;
+		}
 
 		if (Button.pressed(playButton)) {
 			FlxG.switchState(new StateModeList());
