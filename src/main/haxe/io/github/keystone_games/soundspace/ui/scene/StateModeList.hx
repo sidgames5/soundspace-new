@@ -6,6 +6,8 @@ import flixel.text.FlxText;
 import flixel.FlxState;
 
 class StateModeList extends FlxState {
+    public static var titleText:FlxText;
+    
     public override function create() {
         super.create();
     }
