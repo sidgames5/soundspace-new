@@ -29,6 +29,8 @@
 	<haxelib name="flixel-addons" />
 	<haxelib name="flixel-ui" />
 	<haxelib name="random" />
+	<haxelib name="console.hx" />
+	<haxelib name="console-out" />
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
 
