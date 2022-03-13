@@ -13,6 +13,8 @@ class StateLoading extends FlxState {
 	public static var lpc:Int = 1;
 	public static var lpcTimer:Float;
 
+	public static var loaded:Bool = false;
+
 	public override function create() {
 		super.create();
 
@@ -26,10 +28,14 @@ class StateLoading extends FlxState {
 		titleText.screenCenter(X);
 		titleText.y = FlxG.height / 8;
 		add(titleText);
+
+		loaded = true;
 	}
 
 	public override function update(dt:Float) {
 		super.update(dt);
+
+		if (loaded) FlxG.switchState(new StateMenu());
 
 		switch (bgLeft) {
 			case true:

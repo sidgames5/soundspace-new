@@ -5,3 +5,4 @@ hxformat.json
 # Build
 Build/
 Release/
+bin/
