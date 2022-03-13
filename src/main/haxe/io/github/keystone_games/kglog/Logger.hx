@@ -60,9 +60,9 @@ class Logger
 	
 	public static function debug(Text:Any):Void {
 		#if sys
-		Sys.println('[debug] $Text');
+		var d = Date.now();
+		Sys.println('[debug@${d.getTime()}] $Text');
 		#end
-			
 		var p = Path.join([logDir, logFile]);
 		sessionLog = sessionLog + "[debug] " + Text + "\n";
 	}
