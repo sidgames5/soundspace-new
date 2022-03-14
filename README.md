@@ -8,7 +8,7 @@ First you need to install Haxe and HaxeFlixel.
 
 Linux users:
 ```
-sudo pacman -S haxe
+sudo apt install haxe
 haxelib setup
 haxelib install lime
 haxelib install openfl
