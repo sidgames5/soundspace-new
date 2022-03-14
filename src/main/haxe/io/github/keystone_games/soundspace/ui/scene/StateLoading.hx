@@ -48,10 +48,14 @@ class StateLoading extends FlxState {
 			bgLeft = true;
 		if (bar.x < 0)
 			bgLeft = false;
+		#if debug
 		Logger.debug(bar.x);
+		#end
 
 		lpcTimer += dt;
+		#if debug
 		Logger.debug(lpcTimer);
+		#end
 		if (lpcTimer >= (1/3)) {
 			if (lpc == 3) {
 				lpc = 1;
