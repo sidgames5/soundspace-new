@@ -54,7 +54,6 @@ class Logger
 		Sys.println('$Text');
 		#end
 
-		var p = Path.join([logDir, logFile]);
 		sessionLog = sessionLog + Text + "\n";
 	}
 	
@@ -63,7 +62,6 @@ class Logger
 		var d = Date.now();
 		Sys.println('[debug@${d.getTime()}] $Text');
 		#end
-		var p = Path.join([logDir, logFile]);
 		sessionLog = sessionLog + "[debug] " + Text + "\n";
 	}
 	
@@ -76,8 +74,7 @@ class Logger
 		#if sys
 		Sys.println(Location + ": " + Text);
 		#end
-			
-		var p = Path.join([logDir, logFile]);
+
 		sessionLog = sessionLog + Location + ": " + Text;
 	}
 
@@ -92,7 +89,6 @@ class Logger
 		Console.log("Error: " + Error + " at " + Location);
 		#end
 
-		var p = Path.join([logDir, logFile]);
 		sessionLog = sessionLog + "Error at " + Location + ": " + Error;
 	}
 }
