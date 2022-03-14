@@ -85,12 +85,21 @@ class Logger
 	 * @param  Error     The error text to log.
 	 * @param  Location  Class name and path of error location
 	 */
-	public static function error(Error:String, Location:String)
-	{
-		#if sys
-		Console.log("Error: " + Error + " at " + Location);
-		#end
+	 public static function error(Error:String, Location:String)
+		{
+			#if sys
+			Console.log("Error: " + Error + " at " + Location);
+			#end
+	
+			sessionLog = sessionLog + "Error at " + Location + ": " + Error;
+		}
 
-		sessionLog = sessionLog + "Error at " + Location + ": " + Error;
-	}
+		public static function warn(Message:String)
+			{
+				#if sys
+				Console.log("[warn] " + Message);
+				#end
+		
+				sessionLog = sessionLog + "[warn] " + Message;
+			}
 }

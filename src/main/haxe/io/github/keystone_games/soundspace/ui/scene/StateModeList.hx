@@ -1,5 +1,7 @@
 package io.github.keystone_games.soundspace.ui.scene;
 
+import io.github.keystone_games.soundspace.lists.Modes;
+import io.github.keystone_games.soundspace.ui.util.Button;
 import flixel.FlxG;
 import flixel.util.FlxColor;
 import flixel.text.FlxText;
