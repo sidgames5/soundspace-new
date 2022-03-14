@@ -3,8 +3,7 @@ package io.github.keystone_games.kglog;
 import Console;
 import haxe.io.Path;
 
-class Logger
-{
+class Logger {
 	/**
 	 * Path of the log directory.
 	 */
@@ -21,8 +20,7 @@ class Logger
 	 * Configures the logger.
 	 * @param  LogDir  Path of the program's log file.
 	 */
-	public static function config(LogDir:String):Void
-	{
+	public static function config(LogDir:String):Void {
 		logDir = LogDir;
 
 		var now = Date.now();
@@ -38,12 +36,11 @@ class Logger
 	 * and to the console.
 	 * @param  Text  String of text to log.
 	 */
-	@:deprecated public static function simpleLog(Text:Any):Void
-	{
+	@:deprecated public static function simpleLog(Text:Any):Void {
 		trace("Logger.simpleLog() is deprecated. Use Logger.info() instead");
 		info(Text);
 	}
-	
+
 	/**
 	 * Send a string of text to the program's log file
 	 * and to the console.
@@ -56,7 +53,7 @@ class Logger
 
 		sessionLog = sessionLog + Text + "\n";
 	}
-	
+
 	public static function debug(Text:Any):Void {
 		#if debug
 		#if sys
@@ -66,7 +63,7 @@ class Logger
 		sessionLog = sessionLog + "[debug] " + Text + "\n";
 		#end
 	}
-	
+
 	/**
 	 * Sends a string of text containing locations to the program's log file
 	 * @param  Text      String of text to low.
@@ -85,21 +82,19 @@ class Logger
 	 * @param  Error     The error text to log.
 	 * @param  Location  Class name and path of error location
 	 */
-	 public static function error(Error:String, Location:String)
-		{
-			#if sys
-			Console.log("Error: " + Error + " at " + Location);
-			#end
-	
-			sessionLog = sessionLog + "Error at " + Location + ": " + Error;
-		}
+	public static function error(Error:String, Location:String) {
+		#if sys
+		Console.log("Error: " + Error + " at " + Location);
+		#end
 
-		public static function warn(Message:String)
-			{
-				#if sys
-				Console.log("[warn] " + Message);
-				#end
-		
-				sessionLog = sessionLog + "[warn] " + Message;
-			}
+		sessionLog = sessionLog + "Error at " + Location + ": " + Error;
+	}
+
+	public static function warn(Message:String) {
+		#if sys
+		Console.log("[warn] " + Message);
+		#end
+
+		sessionLog = sessionLog + "[warn] " + Message;
+	}
 }

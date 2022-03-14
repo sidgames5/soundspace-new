@@ -9,7 +9,7 @@ import sys.FileSystem;
 #end
 
 class MapManager {
-  public static var mapFolder:String = Path.join([System.applicationStorageDirectory, "maps/"]);
+	public static var mapFolder:String = Path.join([System.applicationStorageDirectory, "maps/"]);
 
 	public static function download(id:Int) {
 		#if debug
@@ -36,12 +36,12 @@ class MapManager {
 		#end
 	}
 
-  public static function listDownloadedMaps():Int {
-    #if sys
-    var x = FileSystem.readDirectory(mapFolder);
-    return x.length;
-    #else
-    return 0;
-    #end
-  }
+	public static function listDownloadedMaps():Int {
+		#if sys
+		var x = FileSystem.readDirectory(mapFolder);
+		return x.length;
+		#else
+		return 0;
+		#end
+	}
 }

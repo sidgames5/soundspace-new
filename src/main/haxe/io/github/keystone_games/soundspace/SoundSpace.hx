@@ -16,30 +16,27 @@ import sys.FileSystem;
 import sys.io.File;
 #end
 
-class SoundSpace extends Sprite
-{
-	public override function new()
-	{
+class SoundSpace extends Sprite {
+	public override function new() {
 		super();
 		init();
 	}
-	
+
 	public static function init() {
 		postInit();
 	}
-	
+
 	public static function postInit() {
 		Lib.current.addChild(new FlxGame(0, 0, #if html5 StateMenu #else StateLoading #end, 1, 15, 15, #if html5 false #else true #end, false));
 		#if debug
 		Lib.current.addChild(new FPS(10, 10, 0xffffff));
 		#end
 		Logger.info("Playing menu music");
-		//FlxG.sound.playMusic(Data.Menu__wav, Reference.VOLUME_MULTIPLIER, true);
+		// FlxG.sound.playMusic(Data.Menu__wav, Reference.VOLUME_MULTIPLIER, true);
 		Logger.info("Music now playing: " + Data.Menu__wav);
 	}
 
-	public static function exit(exitCode:Int)
-	{
+	public static function exit(exitCode:Int) {
 		#if debug
 		Logger.info("Quitting application...");
 		#end

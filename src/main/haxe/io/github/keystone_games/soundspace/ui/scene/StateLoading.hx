@@ -36,7 +36,8 @@ class StateLoading extends FlxState {
 	public override function update(dt:Float) {
 		super.update(dt);
 
-		if (loaded) FlxG.switchState(new StateMenu());
+		if (loaded)
+			FlxG.switchState(new StateMenu());
 
 		switch (bgLeft) {
 			case true:
@@ -52,7 +53,7 @@ class StateLoading extends FlxState {
 
 		lpcTimer += dt;
 		Logger.debug(lpcTimer);
-		if (lpcTimer >= (1/3)) {
+		if (lpcTimer >= (1 / 3)) {
 			if (lpc == 3) {
 				lpc = 1;
 			} else {
