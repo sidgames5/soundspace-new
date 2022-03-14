@@ -24,25 +24,25 @@ class StateModeList extends FlxState {
 
         modeClassicText = new FlxText(0, 0, 0, "Classic").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
         modeClassicText.screenCenter(XY);
-        modeClassicText.x = center - 1024;
+        modeClassicText.x -= 1024;
         modeClassicText.y += 256;
         add(modeClassicText);
 
         modePongText = new FlxText(0, 0, 0, "Pong").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
         modePongText.screenCenter(XY);
-        modePongText.x = center - 512;
+        modePongText.x -= 512;
         modePongText.y += 256;
         add(modePongText);
 
         modeKeyboardText = new FlxText(0, 0, 0, "Keyboard").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
         modeKeyboardText.screenCenter(XY);
-        modeKeyboardText.x = center + 512;
+        modeKeyboardText.x += 512;
         modeKeyboardText.y += 256;
         add(modeKeyboardText);
 
         modeBeatText = new FlxText(0, 0, 0, "Beat").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
         modeBeatText.screenCenter(XY);
-        modeBeatText.x = center + 1024;
+        modeBeatText.x += 1024;
         modeBeatText.y += 256;
         add(modeBeatText);
     }
