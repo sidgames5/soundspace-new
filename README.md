@@ -57,3 +57,5 @@ Run the command on windows to generate a windows executable and run on linux to 
 - [LeWolfYT](https://github.com/LeWolfYT) - OST1 Song Pack
 - [Feralkitty9](https://github.com/feralkitty9) - Sound effects
 - [GoodnessMC](about:blank) - Menu theme
+
+<iframe src="https://keystone-games.github.io/SoundSpace/CONTRIBUTING.md" title="Contributing guidelines"></iframe>
