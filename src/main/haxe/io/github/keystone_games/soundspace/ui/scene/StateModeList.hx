@@ -48,5 +48,10 @@ class StateModeList extends FlxState {
     }
     public override function update(dt:Float) {
         super.update(dt);
+        
+        if (Button.pressed(modeClassicText)) FlxG.switchState(new StateMapSelector(Modes.CLASSIC));
+        if (Button.pressed(modePongText)) FlxG.switchState(new StateMapSelector(Modes.PONG));
+        if (Button.pressed(modeKeyboardText)) FlxG.switchState(new StateMapSelector(Modes.KEYBOARD));
+        if (Button.pressed(modeBeatText)) FlxG.switchState(new StateMapSelector(Modes.BEAT));
     }
 }
