@@ -30,15 +30,21 @@ class SoundSpace extends Sprite
 	
 	public static function postInit() {
 		Lib.current.addChild(new FlxGame(0, 0, #if html5 StateMenu #else StateLoading #end, 1, 15, 15, #if html5 false #else true #end, false));
+		#if debug
 		Lib.current.addChild(new FPS(10, 10, 0xffffff));
 		Logger.info("Playing menu music");
+		#end
 		//FlxG.sound.playMusic(Data.Menu__wav, Reference.VOLUME_MULTIPLIER, true);
+		#if debug
 		Logger.info("Music now playing: " + Data.Menu__wav);
+		#end
 	}
 
 	public static function exit(exitCode:Int)
 	{
+		#if debug
 		Logger.info("Quitting application...");
+		#end
 		System.exit(exitCode);
 	}
 }
