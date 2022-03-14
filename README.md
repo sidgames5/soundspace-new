@@ -31,8 +31,8 @@ haxelib run lime setup flixel
 haxelib run lime setup
 ```
 
-Now to compile the game, go into the folder where Project.xml is and type `lime test cpp` in the command prompt.
-Run the command on windows to generate a windows executable and run on linux to create a linux executable.
+Now to compile the game, go into the folder where Project.xml is and type `lime test cpp -release` in the command prompt.
+Run the command on windows to generate a windows executable and run on linux to create a linux executable. If you want to make changes to the code you should probably use `lime test cpp -debug`.
 
 ## Credits / shoutouts
 
