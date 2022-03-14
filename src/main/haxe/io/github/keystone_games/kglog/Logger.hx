@@ -58,11 +58,13 @@ class Logger
 	}
 	
 	public static function debug(Text:Any):Void {
+		#if debug
 		#if sys
 		var d = Date.now();
 		Sys.println('[debug@${d.getTime()}] $Text');
 		#end
 		sessionLog = sessionLog + "[debug] " + Text + "\n";
+		#end
 	}
 	
 	/**
