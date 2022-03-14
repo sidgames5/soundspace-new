@@ -41,17 +41,29 @@ class StateModeList extends FlxState {
         modePongText.x -= 512;
         modePongText.y += 256;
         add(modePongText);
+        modePongImage = new FlxSprite(0, 0, Assets.PongICN_1__png);
+        modePongImage.x = modePongText.x;
+        modePongImage.y = modePongText.y - 64;
+        add(modePongText);
 
         modeKeyboardText = new FlxText(0, 0, 0, "Keyboard").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
         modeKeyboardText.screenCenter(XY);
         modeKeyboardText.x += 512;
         modeKeyboardText.y += 256;
         add(modeKeyboardText);
+        modeKeyboardImage = new FlxSprite(0, 0, Assets.KeyboardICN_1__png);
+        modeKeyboardImage.x = modeKeyboardText.x;
+        modeKeyboardImage.y = modeKeyboardText.y - 64;
+        add(modeKeyboardText);
 
         modeBeatText = new FlxText(0, 0, 0, "Beat").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
         modeBeatText.screenCenter(XY);
         modeBeatText.x += 1024;
         modeBeatText.y += 256;
+        add(modeBeatText);
+        modeBeatImage = new FlxSprite(0, 0, Assets.BeatICN_1__png);
+        modeBeatImage.x = modeBeatText.x;
+        modeBeatImage.y = modeBeatText.y - 64;
         add(modeBeatText);
     }
     public override function update(dt:Float) {
@@ -61,5 +73,10 @@ class StateModeList extends FlxState {
         if (Button.pressed(modePongText)) FlxG.switchState(new StateMapSelector(Modes.PONG));
         if (Button.pressed(modeKeyboardText)) FlxG.switchState(new StateMapSelector(Modes.KEYBOARD));
         if (Button.pressed(modeBeatText)) FlxG.switchState(new StateMapSelector(Modes.BEAT));
+        
+        if (Button.pressed(modeClassicImage)) FlxG.switchState(new StateMapSelector(Modes.CLASSIC));
+        if (Button.pressed(modePongImage)) FlxG.switchState(new StateMapSelector(Modes.PONG));
+        if (Button.pressed(modeKeyboardImage)) FlxG.switchState(new StateMapSelector(Modes.KEYBOARD));
+        if (Button.pressed(modeBeatImage)) FlxG.switchState(new StateMapSelector(Modes.BEAT));
     }
 }
