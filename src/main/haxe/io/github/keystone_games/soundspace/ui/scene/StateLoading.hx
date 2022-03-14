@@ -55,7 +55,7 @@ class StateLoading extends FlxState {
 		lpcTimer += dt;
 		#if debug
 		Logger.debug(lpcTimer);
-		#ne
+		#end
 		if (lpcTimer >= (1/3)) {
 			if (lpc == 3) {
 				lpc = 1;
