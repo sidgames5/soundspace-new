@@ -4,6 +4,7 @@ import flixel.FlxG;
 import flixel.util.FlxColor;
 import flixel.text.FlxText;
 import flixel.FlxState;
+import flixel.FlxSprite;
 
 class StateModeList extends FlxState {
     public static var titleText:FlxText;
