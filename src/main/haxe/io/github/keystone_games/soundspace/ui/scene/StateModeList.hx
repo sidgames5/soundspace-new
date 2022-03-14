@@ -9,9 +9,13 @@ class StateModeList extends FlxState {
     public static var titleText:FlxText;
 
     public static var modeClassicText:FlxText;
+    public static var modeClassicImage:FlxSprite;
     public static var modePongText:FlxText;
+    public static var modePongImage:FlxSprite;
     public static var modeKeyboardText:FlxText;
+    public static var modeKeyboardImage:FlxSprite;
     public static var modeBeatText:FlxText;
+    public static var modeBeatImage:FlxSprite;
 
     public override function create() {
         super.create();
@@ -27,7 +31,11 @@ class StateModeList extends FlxState {
         modeClassicText.x -= 1024;
         modeClassicText.y += 256;
         add(modeClassicText);
-
+        modeClassicImage = new FlxSprite(0, 0, Assets.ClassicICN_1__png);
+        modeClassicImage.x = modeClassicText.x;
+        modeClassicImage.y = modeClassicText.y - 64;
+        add(modeClassicText);
+        
         modePongText = new FlxText(0, 0, 0, "Pong").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
         modePongText.screenCenter(XY);
         modePongText.x -= 512;
