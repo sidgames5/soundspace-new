@@ -8,7 +8,7 @@ class MapManager {
       Logger.debug("Checking for sys package");
     #end
     #if sys
-    var http = new Http('https://keystone-games.github.io/db/soundspace/mapdump/map_${id}.json');
+    var http = new Http('https://keystone-games.github.io/db/soundspace/maps/map_${id}.json');
     var r;
 
     http.onData = function (data:String) {
