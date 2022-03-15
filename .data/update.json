@@ -1,13 +1,10 @@
 {
   "top": {
-    "latest-stable": "",
-    "latest-beta": "",
-    "latest-dev": "",
-    "recommended-stable": "",
-    "recommended-beta": "",
-    "recommended-dev": ""
+    "stable": "",
+    "latest": "0.0.1+dev.1",
+    "lts": ""
   },
   "versions": [
-    ""
+    "0.0.1+dev.1"
   ]
 }
