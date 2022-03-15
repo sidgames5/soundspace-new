@@ -9,3 +9,5 @@ This project uses [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.htm
 | Version     | Expires    |
 | ----------- | ---------- |
 | 0.0.1+dev.1 | 2022-03-15 |
+| ----------- | ---------- |
+| 0.0.1+dev.2 | 2022-03-16 |
