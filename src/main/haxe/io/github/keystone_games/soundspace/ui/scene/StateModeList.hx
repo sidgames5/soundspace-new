@@ -8,7 +8,8 @@ import flixel.text.FlxText;
 import flixel.FlxState;
 import flixel.FlxSprite;
 
-class StateModeList extends FlxState {
+class StateModeList extends FlxState
+{
 	public static var titleText:FlxText;
 
 	public static var modeClassicText:FlxText;
@@ -20,14 +21,13 @@ class StateModeList extends FlxState {
 	public static var modeBeatText:FlxText;
 	public static var modeBeatImage:FlxSprite;
 
-	public override function create() {
+	public override function create()
+	{
 		super.create();
 
 		titleText = new FlxText(0, 0, 0, "Select a Mode").setFormat(null, 64, FlxColor.WHITE, CENTER);
 		titleText.screenCenter(X);
 		add(titleText);
-
-		var center = FlxG.width / 2;
 
 		modeClassicText = new FlxText(0, 0, 0, "Classic").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
 		modeClassicText.screenCenter(XY);
@@ -70,7 +70,8 @@ class StateModeList extends FlxState {
 		add(modeBeatText);
 	}
 
-	public override function update(dt:Float) {
+	public override function update(dt:Float)
+	{
 		super.update(dt);
 
 		if (Button.pressed(modeClassicText))

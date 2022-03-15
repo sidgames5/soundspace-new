@@ -1,5 +1,7 @@
 package io.github.keystone_games.soundspace.ui.scene;
 
+import flixel.util.FlxColor;
+import flixel.text.FlxText;
 import flixel.FlxG;
 import io.github.keystone_games.soundspace.lists.Modes;
 import flixel.FlxState;
@@ -7,6 +9,8 @@ import flixel.FlxState;
 class StateMapSelector extends FlxState
 {
 	public static var mapList:Modes;
+
+	public static var modeIndicator:FlxText;
 
 	public function new(list:Modes)
 	{
@@ -27,6 +31,10 @@ class StateMapSelector extends FlxState
 
 		FlxG.updateFramerate = 60;
 		FlxG.drawFramerate = 60;
+
+		modeIndicator = new FlxText(0, 0, 0, "X Mode").setFormat(null, 32, FlxColor.WHITE, CENTER);
+		modeIndicator.screenCenter(X);
+		add(modeIndicator);
 
 		switch (mapList)
 		{
