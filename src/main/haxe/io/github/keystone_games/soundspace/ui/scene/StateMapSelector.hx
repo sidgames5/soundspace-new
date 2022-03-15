@@ -16,12 +16,6 @@ class StateMapSelector extends FlxState
 	{
 		super();
 
-		/*switch (list) {
-			case CLASSIC:
-			case: PONG:
-			case: KEYBOARD:
-			case: BEAT:
-		}*/
 		mapList = list;
 	}
 
@@ -68,5 +62,17 @@ class StateMapSelector extends FlxState
 	public override function update(dt:Float)
 	{
 		super.update(dt);
+
+		switch (mapList)
+		{
+			case CLASSIC:
+				modeIndicator.text = "Classic Mode";
+			case PONG:
+				modeIndicator.text = "Pong Mode";
+			case KEYBOARD:
+				modeIndicator.text = "Keyboard Mode";
+			case BEAT:
+				modeIndicator.text = "Beat Mode";
+		}
 	}
 }
