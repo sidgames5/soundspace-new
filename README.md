@@ -225,6 +225,7 @@ currently being supported with security updates.
 | Version     | Supported          |
 | ----------- | ------------------ |
 | 0.0.1+dev.1 | :x: |      
+| 0.0.1+dev.2 | :x: |
 
 ## Reporting a Vulnerability
 
