@@ -9,7 +9,7 @@ import io.github.keystone_games.soundspace.util.map.MapManager;
 class StateTempPlay extends FlxState
 {
 	public static var levelIndicator:FlxText;
-	
+
 	public static var time:Float = 0;
 	public static var tempTime:Float = 0;
 	public static var beats:Int = 0;
@@ -18,7 +18,9 @@ class StateTempPlay extends FlxState
 	{
 		super.create();
 
-		FlxG.drawFramerate = 144;
+		FlxG.drawFramerate = 90;
+		FlxG.updateFramerate = 90;
+		FlxG.debugger.visible = false;
 
 		levelIndicator = new FlxText(0, 0, 0, "Level X").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.BLUE, CENTER);
 		levelIndicator.screenCenter(X);
@@ -37,15 +39,19 @@ class StateTempPlay extends FlxState
 		/*
 			uF = round ((bpm / 60) * 64)
 		 */
-		FlxG.updateFramerate = 135;
+		FlxG.updateFramerate = 1000;
 	}
 
 	public override function update(dt:Float)
 	{
 		super.update(dt);
-		
+
 		time += dt;
 		tempTime += dt;
-		if (tempTime > 2.11667) { tempTime = 0; beats++; }
+		if (tempTime > 2.11667)
+		{
+			tempTime = 0;
+			beats++;
+		}
 	}
 }
