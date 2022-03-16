@@ -29,7 +29,7 @@ class StateModeList extends FlxState
 		titleText.screenCenter(X);
 		add(titleText);
 
-		modeClassicText = new FlxText(0, 0, 0, "Classic").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
+		modeClassicText = new FlxText(0, 0, 0, "Classic").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.RED, CENTER);
 		modeClassicText.screenCenter(XY);
 		modeClassicText.x -= 1024;
 		modeClassicText.y += 256;
@@ -39,7 +39,7 @@ class StateModeList extends FlxState
 		modeClassicImage.y = modeClassicText.y - 64;
 		add(modeClassicText);
 
-		modePongText = new FlxText(0, 0, 0, "Pong").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
+		modePongText = new FlxText(0, 0, 0, "Pong").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.RED, CENTER);
 		modePongText.screenCenter(XY);
 		modePongText.x -= 512;
 		modePongText.y += 256;
@@ -49,7 +49,7 @@ class StateModeList extends FlxState
 		modePongImage.y = modePongText.y - 64;
 		add(modePongText);
 
-		modeKeyboardText = new FlxText(0, 0, 0, "Keyboard").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
+		modeKeyboardText = new FlxText(0, 0, 0, "Keyboard").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.RED, CENTER);
 		modeKeyboardText.screenCenter(XY);
 		modeKeyboardText.x += 512;
 		modeKeyboardText.y += 256;
@@ -59,7 +59,7 @@ class StateModeList extends FlxState
 		modeKeyboardImage.y = modeKeyboardText.y - 64;
 		add(modeKeyboardText);
 
-		modeBeatText = new FlxText(0, 0, 0, "Beat").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.GREEN, CENTER);
+		modeBeatText = new FlxText(0, 0, 0, "Beat").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.RED, CENTER);
 		modeBeatText.screenCenter(XY);
 		modeBeatText.x += 1024;
 		modeBeatText.y += 256;

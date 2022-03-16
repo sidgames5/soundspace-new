@@ -7,11 +7,13 @@ import flixel.text.FlxText;
 import flixel.FlxState;
 import io.github.keystone_games.soundspace.ui.util.Button;
 
-class StateMenu extends FlxState {
+class StateMenu extends FlxState
+{
 	public static var titleText:FlxText;
 	public static var playButton:FlxSprite;
 
-	public override function create() {
+	public override function create()
+	{
 		super.create();
 
 		FlxG.updateFramerate = 15;
@@ -26,16 +28,19 @@ class StateMenu extends FlxState {
 		add(playButton);
 	}
 
-	public override function update(dt:Float) {
+	public override function update(dt:Float)
+	{
 		super.update(dt);
 
-		if (FlxG.mouse.justMoved) {
+		if (FlxG.mouse.justMoved)
+		{
 			FlxG.updateFramerate = 30;
 			FlxG.drawFramerate = 30;
 		}
 
-		if (Button.pressed(playButton)) {
-			FlxG.switchState(new StateModeList());
+		if (Button.pressed(playButton))
+		{
+			FlxG.switchState(new StateTempPlay());
 		}
 	}
 }
