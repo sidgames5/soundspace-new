@@ -9,6 +9,10 @@ import io.github.keystone_games.soundspace.util.map.MapManager;
 class StateTempPlay extends FlxState
 {
 	public static var levelIndicator:FlxText;
+	
+	public static var time:Float = 0;
+	public static var tempTime:Float = 0;
+	public static var beats:Int = 0;
 
 	public override function create()
 	{
@@ -39,5 +43,9 @@ class StateTempPlay extends FlxState
 	public override function update(dt:Float)
 	{
 		super.update(dt);
+		
+		time += dt;
+		tempTime += dt;
+		if (tempTime > 2.11667) { tempTime = 0; beats++; }
 	}
 }
