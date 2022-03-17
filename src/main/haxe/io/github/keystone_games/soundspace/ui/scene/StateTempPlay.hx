@@ -13,6 +13,7 @@ class StateTempPlay extends FlxState
 	public static var time:Float = 0;
 	public static var tempTime:Float = 0;
 	public static var beats:Int = 0;
+	public static var bpm:Float = 120;
 
 	public override function create()
 	{
@@ -30,6 +31,7 @@ class StateTempPlay extends FlxState
 		switch (m.lm)
 		{
 			case 0:
+				bpm = 127;
 				m1();
 		}
 	}
@@ -48,7 +50,7 @@ class StateTempPlay extends FlxState
 
 		time += dt;
 		tempTime += dt;
-		if (tempTime > 2.11667)
+		if (tempTime > (1000 / bpm))
 		{
 			tempTime = 0;
 			beats++;
