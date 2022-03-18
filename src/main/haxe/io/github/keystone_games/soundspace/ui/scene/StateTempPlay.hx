@@ -42,6 +42,7 @@ class StateTempPlay extends FlxState
 			uF = round ((bpm / 60) * 64)
 		 */
 		FlxG.updateFramerate = 1000;
+		levelIndicator.text = "Level 1";
 	}
 
 	public override function update(dt:Float)
