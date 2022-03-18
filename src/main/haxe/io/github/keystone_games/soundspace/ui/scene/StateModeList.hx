@@ -20,10 +20,15 @@ class StateModeList extends FlxState
 	public static var modeKeyboardImage:FlxSprite;
 	public static var modeBeatText:FlxText;
 	public static var modeBeatImage:FlxSprite;
+	public static var background:FlxSprite;
 
 	public override function create()
 	{
 		super.create();
+
+		background = new FlxSprite();
+		background.makeGraphic(FlxG.width, FlxG.height, FlxColor.fromString("#505050"));
+		add(background);
 
 		titleText = new FlxText(0, 0, 0, "Select a Mode").setFormat(null, 64, FlxColor.WHITE, CENTER);
 		titleText.screenCenter(X);
@@ -31,43 +36,43 @@ class StateModeList extends FlxState
 
 		modeClassicText = new FlxText(0, 0, 0, "Classic").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.RED, CENTER);
 		modeClassicText.screenCenter(XY);
-		modeClassicText.x -= 768;
+		modeClassicText.x -= 840;
 		modeClassicText.y += 256;
 		add(modeClassicText);
 		modeClassicImage = new FlxSprite(0, 0, Assets.ClassicICN_1__png);
 		modeClassicImage.x = modeClassicText.x;
-		modeClassicImage.y = modeClassicText.y - 64;
-		add(modeClassicText);
+		modeClassicImage.y = modeClassicText.y - 512;
+		add(modeClassicImage);
 
 		modePongText = new FlxText(0, 0, 0, "Pong").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.RED, CENTER);
 		modePongText.screenCenter(XY);
-		modePongText.x -= 256;
+		modePongText.x -= 240;
 		modePongText.y += 256;
 		add(modePongText);
 		modePongImage = new FlxSprite(0, 0, Assets.PongICN_1__png);
 		modePongImage.x = modePongText.x;
-		modePongImage.y = modePongText.y - 64;
-		add(modePongText);
+		modePongImage.y = modePongText.y - 512;
+		add(modePongImage);
 
 		modeKeyboardText = new FlxText(0, 0, 0, "Keyboard").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.RED, CENTER);
 		modeKeyboardText.screenCenter(XY);
-		modeKeyboardText.x += 256;
+		modeKeyboardText.x += 240;
 		modeKeyboardText.y += 256;
 		add(modeKeyboardText);
 		modeKeyboardImage = new FlxSprite(0, 0, Assets.KeyboardICN_1__png);
 		modeKeyboardImage.x = modeKeyboardText.x;
-		modeKeyboardImage.y = modeKeyboardText.y - 64;
-		add(modeKeyboardText);
+		modeKeyboardImage.y = modeKeyboardText.y - 512;
+		add(modeKeyboardImage);
 
 		modeBeatText = new FlxText(0, 0, 0, "Beat").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.RED, CENTER);
 		modeBeatText.screenCenter(XY);
-		modeBeatText.x += 768;
+		modeBeatText.x += 840;
 		modeBeatText.y += 256;
 		add(modeBeatText);
 		modeBeatImage = new FlxSprite(0, 0, Assets.BeatICN_1__png);
 		modeBeatImage.x = modeBeatText.x;
-		modeBeatImage.y = modeBeatText.y - 64;
-		add(modeBeatText);
+		modeBeatImage.y = modeBeatText.y - 512;
+		add(modeBeatImage);
 	}
 
 	public override function update(dt:Float)
