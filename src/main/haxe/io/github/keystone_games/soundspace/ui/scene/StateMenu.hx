@@ -40,7 +40,7 @@ class StateMenu extends FlxState
 
 		if (Button.pressed(playButton))
 		{
-			FlxG.switchState(new StateTempPlay());
+			FlxG.switchState(new StateModeList());
 		}
 	}
 }

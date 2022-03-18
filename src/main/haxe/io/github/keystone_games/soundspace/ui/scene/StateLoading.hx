@@ -34,6 +34,8 @@ class StateLoading extends FlxState
 
 		FlxG.drawFramerate = 15;
 		FlxG.updateFramerate = 60;
+
+		loaded = true;
 	}
 
 	public override function update(dt:Float)
