@@ -50,7 +50,7 @@ class StateTempPlay extends FlxState
 
 		time += dt;
 		tempTime += dt;
-		if (tempTime > (1000 / bpm))
+		if (tempTime > (1000 / (bpm / 60)))
 		{
 			tempTime = 0;
 			beats++;

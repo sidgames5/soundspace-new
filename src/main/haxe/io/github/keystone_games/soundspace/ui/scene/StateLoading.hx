@@ -7,7 +7,8 @@ import flixel.FlxState;
 import flixel.FlxSprite;
 import flixel.FlxG;
 
-class StateLoading extends FlxState {
+class StateLoading extends FlxState
+{
 	public static var bar:FlxSprite;
 	public static var bgLeft:Bool;
 	public static var titleText:FlxText;
@@ -16,7 +17,8 @@ class StateLoading extends FlxState {
 
 	public static var loaded:Bool = false;
 
-	public override function create() {
+	public override function create()
+	{
 		super.create();
 
 		bar = new FlxSprite();
@@ -30,16 +32,19 @@ class StateLoading extends FlxState {
 		titleText.y = FlxG.height / 8;
 		add(titleText);
 
-		loaded = true;
+		FlxG.drawFramerate = 15;
+		FlxG.updateFramerate = 60;
 	}
 
-	public override function update(dt:Float) {
+	public override function update(dt:Float)
+	{
 		super.update(dt);
 
 		if (loaded)
 			FlxG.switchState(new StateMenu());
 
-		switch (bgLeft) {
+		switch (bgLeft)
+		{
 			case true:
 				bar.x -= 5;
 			case false:
@@ -53,14 +58,19 @@ class StateLoading extends FlxState {
 
 		lpcTimer += dt;
 		Logger.debug(lpcTimer);
-		if (lpcTimer >= (1 / 3)) {
-			if (lpc == 3) {
+		if (lpcTimer >= (1 / 3))
+		{
+			if (lpc == 3)
+			{
 				lpc = 1;
-			} else {
+			}
+			else
+			{
 				lpc++;
 			}
 			lpcTimer = 0;
-			switch (lpc) {
+			switch (lpc)
+			{
 				case 1:
 					titleText.text = "Loading.";
 				case 2:
