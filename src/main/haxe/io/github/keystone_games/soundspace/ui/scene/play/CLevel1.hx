@@ -1,5 +1,7 @@
 package io.github.keystone_games.soundspace.ui.scene.play;
 
+import haxe.Timer;
+import io.github.keystone_games.soundspace.util.map.MapDB;
 import flixel.FlxSprite;
 import flixel.FlxG;
 import flixel.util.FlxColor;
@@ -8,11 +10,17 @@ import flixel.FlxState;
 
 class CLevel1 extends FlxState {
 	public static var levelIndicator:FlxText;
+	public static var difficultyIndicator:FlxText;
 
 	public static var time:Float = 0;
 	public static var tempTime:Float = 0;
 	public static var beats:Int = 0;
-	public static final bpm:Float = 127;
+	public static var bpm:Float = MapDB.Level1.bpm;
+	public static var diff:Float = MapDB.Level1.dm;
+	public static var score:Int = 0;
+
+	public static var start:Bool = false;
+	public static var activate:Bool = false;
 
 	public static var lane1:FlxSprite;
 	public static var lane2:FlxSprite;
@@ -39,10 +47,15 @@ class CLevel1 extends FlxState {
 		super.create();
 
 		FlxG.updateFramerate = 1000;
+		FlxG.drawFramerate = 1000;
 
-		levelIndicator = new FlxText(0, 0, 0, "Level 1").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.BLUE, CENTER);
+		levelIndicator = new FlxText(0, 0, 0, "Level 1").setFormat("resources/assets/fonts/monsterrat.ttf", 32, FlxColor.WHITE, CENTER);
 		levelIndicator.screenCenter(X);
 		add(levelIndicator);
+
+		difficultyIndicator = new FlxText(0, 0, 0,
+			"Difficulty: " + MapDB.Level1.difficulty).setFormat("resources/assets/fonts/monsterrat.ttf", 128, FlxColor.fromString("#ff3f48cc"), CENTER);
+		difficultyIndicator.screenCenter(XY);
 
 		lane1 = new FlxSprite();
 		lane1.makeGraphic(Std.int(FlxG.width / 8), Std.int((FlxG.height / 16) * 12), FlxColor.fromString("#7f3e3e3e"));
@@ -101,17 +114,39 @@ class CLevel1 extends FlxState {
 		key4.y = lane4.y;
 		key4.y += lane4.height;
 		add(key4);
+
+		add(difficultyIndicator);
+
+		Timer.delay(function() {
+			remove(difficultyIndicator);
+			start = true;
+			activate = true;
+		}, 2500);
+
+		// note initializations
+		note1.x = lane2.x;
+		note1.y = lane2.y;
 	}
 
 	public override function update(dt:Float) {
 		super.update(dt);
 
-		note1.x = lane2.x;
-		note1.y = lane2.y;
-		add(note1);
+		if (activate) {
+			activate = false;
+			add(note1);
+		}
+
+		if (start) {
+			note1.y += diff * 3;
+		}
 
 		if (FlxG.keys.pressed.D) {
 			key1.loadGraphic(Assets.KeyPressed__png);
+			if (note1.overlaps(key1)) {
+				remove(note1);
+				score += 1;
+				FlxG.sound.play(Data.Hit__wav, Reference.VOLUME_MULTIPLIER);
+			}
 		} else {
 			key1.loadGraphic(Assets.Key__png);
 		}
