@@ -20,6 +20,15 @@ class CLevel1 extends FlxState {
 	public static var lane4:FlxSprite;
 
 	public static var note1:FlxSprite;
+	public static var note2:FlxSprite;
+	public static var note3:FlxSprite;
+	public static var note4:FlxSprite;
+	public static var note5:FlxSprite;
+	public static var note6:FlxSprite;
+	public static var note7:FlxSprite;
+	public static var note8:FlxSprite;
+	public static var note9:FlxSprite;
+	public static var note10:FlxSprite;
 
 	public override function create() {
 		super.create();
