@@ -68,7 +68,7 @@ class CLevel1 extends FlxState {
 		lane4.y = Std.int(FlxG.height / 16);
 		lane4.x += Std.int(lane4.width) * 2 - Std.int(lane4.width) * 0.5;
 		add(lane4);
-		trace(lane1.width);
+		trace(Std.int(FlxG.height / 16) * 4);
 
 		note1 = new FlxSprite(0, 0, Assets.ClassicNote__png);
 		note2 = new FlxSprite(0, 0, Assets.ClassicNote__png);
@@ -84,18 +84,22 @@ class CLevel1 extends FlxState {
 		key1 = new FlxSprite(0, 0, Assets.Key__png);
 		key1.x = lane1.x;
 		key1.y = lane1.y;
+		key1.y += lane1.height;
 		add(key1);
 		key2 = new FlxSprite(0, 0, Assets.Key__png);
 		key2.x = lane2.x;
 		key2.y = lane2.y;
+		key2.y += lane2.height;
 		add(key2);
 		key3 = new FlxSprite(0, 0, Assets.Key__png);
 		key3.x = lane3.x;
 		key3.y = lane3.y;
+		key3.y += lane3.height;
 		add(key3);
 		key4 = new FlxSprite(0, 0, Assets.Key__png);
 		key4.x = lane4.x;
 		key4.y = lane4.y;
+		key4.y += lane4.height;
 		add(key4);
 	}
 
@@ -105,6 +109,27 @@ class CLevel1 extends FlxState {
 		note1.x = lane2.x;
 		note1.y = lane2.y;
 		add(note1);
+
+		if (FlxG.keys.pressed.D) {
+			key1.loadGraphic(Assets.KeyPressed__png);
+		} else {
+			key1.loadGraphic(Assets.Key__png);
+		}
+		if (FlxG.keys.pressed.F) {
+			key2.loadGraphic(Assets.KeyPressed__png);
+		} else {
+			key2.loadGraphic(Assets.Key__png);
+		}
+		if (FlxG.keys.pressed.J) {
+			key3.loadGraphic(Assets.KeyPressed__png);
+		} else {
+			key3.loadGraphic(Assets.Key__png);
+		}
+		if (FlxG.keys.pressed.K) {
+			key4.loadGraphic(Assets.KeyPressed__png);
+		} else {
+			key4.loadGraphic(Assets.Key__png);
+		}
 
 		time += dt;
 		tempTime += dt;
