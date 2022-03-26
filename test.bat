@@ -1,2 +1,2 @@
 @echo off
-lime test windows -debug
+lime test cpp -debug
