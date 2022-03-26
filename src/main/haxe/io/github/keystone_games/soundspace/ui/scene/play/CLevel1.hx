@@ -145,23 +145,38 @@ class CLevel1 extends FlxState {
 			if (note1.overlaps(key1)) {
 				remove(note1);
 				score += 1;
-				FlxG.sound.play(Data.Hit__wav, Reference.VOLUME_MULTIPLIER);
+				// FlxG.sound.play(Data.Hit__wav, Reference.VOLUME_MULTIPLIER);
 			}
 		} else {
 			key1.loadGraphic(Assets.Key__png);
 		}
 		if (FlxG.keys.pressed.F) {
 			key2.loadGraphic(Assets.KeyPressed__png);
+			if (note1.overlaps(key2)) {
+				remove(note1);
+				score += 1;
+				// FlxG.sound.play(Data.Hit__wav, Reference.VOLUME_MULTIPLIER);
+			}
 		} else {
 			key2.loadGraphic(Assets.Key__png);
 		}
 		if (FlxG.keys.pressed.J) {
 			key3.loadGraphic(Assets.KeyPressed__png);
+			if (note1.overlaps(key3)) {
+				remove(note1);
+				score += 1;
+				// FlxG.sound.play(Data.Hit__wav, Reference.VOLUME_MULTIPLIER);
+			}
 		} else {
 			key3.loadGraphic(Assets.Key__png);
 		}
 		if (FlxG.keys.pressed.K) {
 			key4.loadGraphic(Assets.KeyPressed__png);
+			if (note1.overlaps(key4)) {
+				remove(note1);
+				score += 1;
+				// FlxG.sound.play(Data.Hit__wav, Reference.VOLUME_MULTIPLIER);
+			}
 		} else {
 			key4.loadGraphic(Assets.Key__png);
 		}
