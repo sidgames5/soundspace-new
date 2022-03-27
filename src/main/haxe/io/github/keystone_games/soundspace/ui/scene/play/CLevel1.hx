@@ -1,5 +1,6 @@
 package io.github.keystone_games.soundspace.ui.scene.play;
 
+import io.github.keystone_games.kglog.Logger;
 import haxe.Timer;
 import io.github.keystone_games.soundspace.util.map.MapDB;
 import flixel.FlxSprite;
@@ -21,6 +22,8 @@ class CLevel1 extends FlxState {
 
 	public static var start:Bool = false;
 	public static var activate:Bool = false;
+	public static var musicInit:Bool = false;
+	public static var temp1:Bool = false;
 
 	public static var lane1:FlxSprite;
 	public static var lane2:FlxSprite;
@@ -45,6 +48,8 @@ class CLevel1 extends FlxState {
 
 	public override function create() {
 		super.create();
+
+		FlxG.mouse.visible = false;
 
 		FlxG.updateFramerate = 1000;
 		FlxG.drawFramerate = 1000;
@@ -131,6 +136,8 @@ class CLevel1 extends FlxState {
 	public override function update(dt:Float) {
 		super.update(dt);
 
+		Logger.debug(beats);
+
 		if (activate) {
 			activate = false;
 			add(note1);
@@ -138,6 +145,22 @@ class CLevel1 extends FlxState {
 
 		if (start) {
 			note1.y += diff * 3;
+		}
+
+		if (note1.overlaps(key2) && !temp1) {
+			musicInit = true;
+		}
+
+		if (musicInit) {
+			musicInit = false;
+			#if html5
+			FlxG.sound.playMusic(Data.Sinefeld__mp3, Reference.VOLUME_MULTIPLIER, false);
+			#else
+			FlxG.sound.playMusic(Data.Sinefeld__ogg, Reference.VOLUME_MULTIPLIER, false);
+			#end
+			beats = 0;
+			Logger.debug("Music started");
+			temp1 = true;
 		}
 
 		if (FlxG.keys.pressed.D) {
@@ -183,9 +206,10 @@ class CLevel1 extends FlxState {
 
 		time += dt;
 		tempTime += dt;
-		if (tempTime > (1000 / (bpm / 60))) {
+		if (tempTime > Math.round((1000 / (bpm / 60)))) {
 			tempTime = 0;
 			beats++;
 		}
+		Logger.debug(tempTime);
 	}
 }
