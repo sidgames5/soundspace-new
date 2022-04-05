@@ -145,7 +145,7 @@ class CLevel1 extends FlxState {
 
 		if (start) {
 			note1.y += diff * 3;
-			Timer.delay(function() {}, 1000 / 254);
+			Timer.delay(function() {}, Math.round(1 / 254));
 		}
 
 		if (note1.overlaps(key2) && !temp1) {
@@ -207,7 +207,7 @@ class CLevel1 extends FlxState {
 
 		time += dt;
 		tempTime += dt;
-		if (tempTime > Math.round((1000 / (bpm / 60)))) {
+		if (tempTime > Math.round((1 / (bpm / 60)))) {
 			tempTime = 0;
 			beats++;
 		}

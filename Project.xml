@@ -20,7 +20,6 @@
 	<set name="BUILD_DIR" value="bin/release" if="release" />
 	<source path="src/main/haxe" />
 	<assets path="resources" />
-	<assets path="maps" unless="removeMaps" />
 
 	<!-- _______________________________ Libraries ______________________________ -->
 	
