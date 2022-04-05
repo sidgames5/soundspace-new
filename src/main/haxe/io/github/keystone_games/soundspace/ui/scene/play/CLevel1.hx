@@ -145,12 +145,19 @@ class CLevel1 extends FlxState {
 
 		if (start) {
 			note1.y += diff * 3;
-			Timer.delay(function() {}, Math.round(1 / 254));
+			// Timer.delay(function() {}, Math.round(1 / 254));
 		}
 
 		if (note1.overlaps(key2) && !temp1) {
 			musicInit = true;
 		}
+
+		if (beats == 2) {
+			note2.x = lane1.x;
+			note2.y = lane1.y;
+		}
+
+		note1.y += diff * 3;
 
 		if (musicInit) {
 			musicInit = false;
