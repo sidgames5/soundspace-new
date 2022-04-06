@@ -152,7 +152,7 @@ class CLevel1 extends FlxState {
 			musicInit = true;
 		}
 
-		if (beats == 2) {
+		if (time == (1000 / 254) - diff * 3) {
 			note2.x = lane1.x;
 			note2.y = lane1.y;
 		}
