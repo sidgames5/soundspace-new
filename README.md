@@ -24,15 +24,18 @@ Windows users:
 ```
 haxelib install lime
 haxelib install openfl
-haxelib install flixel
-haxelib install flixel-ui
 haxelib install flixel-addons
 haxelib run lime setup flixel
 haxelib run lime setup
+haxelib run flixel-tools setup
 ```
-
-Now to compile the game, go into the folder where Project.xml is and type `lime test cpp` in the command prompt.
-Run the command on windows to generate a windows executable and run on linux to create a linux executable.
+Next you need to run the compilation command
+Windows:
+Type `lime build cs -Drelease` in the command prompt. You might need to install the .net SDK in order to compile it.
+Linux:
+Type `lime build cpp -Drelease` in the terminal. You might need to install g++ in order to compile it.
+Cross-platform:
+Type `lime build hl -Drelease` in your preferred command executor. To run the compiled game, you need to install [hashlink](https://hashlink.haxe.org/). In your preferred command executor, type `hl ` and then drag the hashlink bytecode executable into the terminal.
 
 ## Credits / shoutouts
 
@@ -57,3 +60,7 @@ Run the command on windows to generate a windows executable and run on linux to 
 - [LeWolfYT](https://github.com/LeWolfYT) - OST1 Song Pack
 - [Feralkitty9](https://github.com/feralkitty9) - Sound effects
 - [GoodnessMC](about:blank) - Menu theme
+
+### Other
+
+- [My awesome supporters on youtube](https://youtube.com/sidgames5) - Reporting bugs and testing
