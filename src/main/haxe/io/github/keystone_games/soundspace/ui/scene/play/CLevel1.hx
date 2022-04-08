@@ -218,6 +218,6 @@ class CLevel1 extends FlxState {
 			tempTime = 0;
 			beats++;
 		}
-		Logger.debug(tempTime);
+		//Logger.debug(tempTime);
 	}
 }
