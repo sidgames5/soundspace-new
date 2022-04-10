@@ -41,6 +41,17 @@ class CLevel1 extends FlxState {
 	public static var note9:FlxSprite;
 	public static var note10:FlxSprite;
 
+	public static var note1enabled:Bool = false;
+	public static var note2enabled:Bool = false;
+	public static var note3enabled:Bool = false;
+	public static var note4enabled:Bool = false;
+	public static var note5enabled:Bool = false;
+	public static var note6enabled:Bool = false;
+	public static var note7enabled:Bool = false;
+	public static var note8enabled:Bool = false;
+	public static var note9enabled:Bool = false;
+	public static var note10enabled:Bool = false;
+
 	public static var key1:FlxSprite;
 	public static var key2:FlxSprite;
 	public static var key3:FlxSprite;
@@ -141,10 +152,11 @@ class CLevel1 extends FlxState {
 		if (activate) {
 			activate = false;
 			add(note1);
+			note1enabled = true;
 		}
 
 		if (start) {
-			note1.y += diff * 3;
+			note1.y += diff * 6;
 			// Timer.delay(function() {}, Math.round(1 / 254));
 		}
 
@@ -152,12 +164,43 @@ class CLevel1 extends FlxState {
 			musicInit = true;
 		}
 
-		if (time == (1000 / 254) - diff * 3) {
+		if (time == (1000 / 254) - diff * 6) {
 			note2.x = lane1.x;
 			note2.y = lane1.y;
+			add(note2);
+			note2enabled = true;
 		}
 
-		note1.y += diff * 3;
+		if (note1enabled) {
+			note1.y += diff * 6;
+		}
+		if (note2enabled) {
+			note2.y += diff * 6;
+		}
+		if (note3enabled) {
+			note3.y += diff * 6;
+		}
+		if (note4enabled) {
+			note4.y += diff * 6;
+		}
+		if (note5enabled) {
+			note5.y += diff * 6;
+		}
+		if (note6enabled) {
+			note6.y += diff * 6;
+		}
+		if (note7enabled) {
+			note7.y += diff * 6;
+		}
+		if (note8enabled) {
+			note8.y += diff * 6;
+		}
+		if (note9enabled) {
+			note9.y += diff * 6;
+		}
+		if (note10enabled) {
+			note10.y += diff * 6;
+		}
 
 		if (musicInit) {
 			musicInit = false;
@@ -176,10 +219,13 @@ class CLevel1 extends FlxState {
 			if (note1.overlaps(key1)) {
 				remove(note1);
 				score += 1;
+
 				// FlxG.sound.play(Data.Hit__wav, Reference.VOLUME_MULTIPLIER);
 			}
+			note1enabled = false;
 		} else {
 			key1.loadGraphic(Assets.Key__png);
+			note1enabled = false;
 		}
 		if (FlxG.keys.pressed.F) {
 			key2.loadGraphic(Assets.KeyPressed__png);
@@ -188,8 +234,10 @@ class CLevel1 extends FlxState {
 				score += 1;
 				// FlxG.sound.play(Data.Hit__wav, Reference.VOLUME_MULTIPLIER);
 			}
+			note1enabled = false;
 		} else {
 			key2.loadGraphic(Assets.Key__png);
+			note1enabled = false;
 		}
 		if (FlxG.keys.pressed.J) {
 			key3.loadGraphic(Assets.KeyPressed__png);
@@ -198,8 +246,10 @@ class CLevel1 extends FlxState {
 				score += 1;
 				// FlxG.sound.play(Data.Hit__wav, Reference.VOLUME_MULTIPLIER);
 			}
+			note1enabled = false;
 		} else {
 			key3.loadGraphic(Assets.Key__png);
+			note1enabled = false;
 		}
 		if (FlxG.keys.pressed.K) {
 			key4.loadGraphic(Assets.KeyPressed__png);
@@ -208,8 +258,10 @@ class CLevel1 extends FlxState {
 				score += 1;
 				// FlxG.sound.play(Data.Hit__wav, Reference.VOLUME_MULTIPLIER);
 			}
+			note1enabled = false;
 		} else {
 			key4.loadGraphic(Assets.Key__png);
+			note1enabled = false;
 		}
 
 		time += dt;
