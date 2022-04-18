@@ -147,8 +147,6 @@ class CLevel1 extends FlxState {
 	public override function update(dt:Float) {
 		super.update(dt);
 
-		Logger.debug(beats);
-
 		if (activate) {
 			activate = false;
 			add(note1);
@@ -270,6 +268,7 @@ class CLevel1 extends FlxState {
 			tempTime = 0;
 			beats++;
 		}
-		//Logger.debug(tempTime);
+		Logger.debug("Beats: " + beats);
+		Logger.debug("Time: " + time);
 	}
 }
