@@ -31,7 +31,7 @@ haxelib run flixel-tools setup
 ```
 Next you need to run the compilation command
 Windows:
-Type `lime build cs -Drelease` in the command prompt. You might need to install the .net SDK in order to compile it.
+Type `lime build cpp -Drelease` in the command prompt. You might need to install the .net SDK in order to compile it.
 Linux:
 Type `lime build cpp -Drelease` in the terminal. You might need to install g++ in order to compile it.
 Cross-platform:
