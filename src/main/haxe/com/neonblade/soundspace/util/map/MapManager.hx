@@ -1,41 +1,35 @@
-package io.github.keystone_games.soundspace.util.map;
+package com.neonblade.soundspace.util.map;
 
 import haxe.Json;
 import lime.system.System;
 import haxe.io.Path;
-import io.github.keystone_games.kglog.Logger;
 import haxe.Http;
 #if sys
 import sys.FileSystem;
 import sys.io.File;
 #end
 
-typedef MD =
-{
+typedef MD = {
 	lm:Int
 }
 
-class MapManager
-{
+class MapManager {
 	public static var mapFolder:String = Path.join([System.applicationStorageDirectory, "maps/"]);
 
-	public static function download(id:Int)
-	{
+	public static function download(id:Int) {
 		#if debug
-		Logger.debug("Checking for sys package");
+		trace("Checking for sys package");
 		#end
 		#if sys
 		var http = new Http('https://keystone-games.github.io/db/soundspace/maps/map_${id}.json');
 		var r;
 
-		http.onData = function(data:String)
-		{
+		http.onData = function(data:String) {
 			var result = haxe.Json.parse(data);
 			r = result;
 		}
 
-		http.onError = function(error)
-		{
+		http.onError = function(error) {
 			trace('error: $error');
 		}
 
@@ -43,12 +37,11 @@ class MapManager
 
 		return r;
 		#else
-		Logger.warn("Unable to download map " + id + ": sys package unavailable");
+		trace("Unable to download map " + id + ": sys package unavailable", null);
 		#end
 	}
 
-	public static function listDownloadedMaps():Int
-	{
+	public static function listDownloadedMaps():Int {
 		#if sys
 		var x = FileSystem.readDirectory(mapFolder);
 		return x.length;
@@ -57,8 +50,7 @@ class MapManager
 		#end
 	}
 
-	public static function temp_init():Int
-	{
+	public static function temp_init():Int {
 		#if sys
 		File.saveContent(Path.join([System.applicationStorageDirectory, "md.json"]), Json.stringify({lm: 0}));
 		return 0;
@@ -67,8 +59,7 @@ class MapManager
 		#end
 	}
 
-	public static function temp_getMD():MD
-	{
+	public static function temp_getMD():MD {
 		#if sys
 		var x:MD = Json.parse(File.getContent(Path.join([System.applicationStorageDirectory, "md.json"])));
 		return x;

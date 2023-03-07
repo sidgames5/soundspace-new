@@ -1,6 +1,5 @@
-package io.github.keystone_games.soundspace.ui.scene;
+package com.neonblade.soundspace.ui.scene;
 
-import io.github.keystone_games.kglog.Logger;
 import flixel.util.FlxColor;
 import flixel.text.FlxText;
 import flixel.FlxState;
@@ -52,10 +51,10 @@ class StateLoading extends FlxState {
 			bgLeft = true;
 		if (bar.x < 0)
 			bgLeft = false;
-		Logger.debug(bar.x);
+		trace(bar.x);
 
 		lpcTimer += dt;
-		Logger.debug(lpcTimer);
+		trace(lpcTimer);
 		if (lpcTimer >= (1 / 3)) {
 			if (lpc == 3) {
 				lpc = 1;

@@ -1,15 +1,14 @@
-package io.github.keystone_games.soundspace.ui.scene;
+package com.neonblade.soundspace.ui.scene;
 
-import io.github.keystone_games.soundspace.lists.Modes;
-import io.github.keystone_games.soundspace.ui.util.Button;
+import com.neonblade.soundspace.lists.Modes;
+import com.neonblade.soundspace.ui.util.Button;
 import flixel.FlxG;
 import flixel.util.FlxColor;
 import flixel.text.FlxText;
 import flixel.FlxState;
 import flixel.FlxSprite;
 
-class StateModeList extends FlxState
-{
+class StateModeList extends FlxState {
 	public static var titleText:FlxText;
 
 	public static var modeClassicText:FlxText;
@@ -22,8 +21,7 @@ class StateModeList extends FlxState
 	public static var modeBeatImage:FlxSprite;
 	public static var background:FlxSprite;
 
-	public override function create()
-	{
+	public override function create() {
 		super.create();
 
 		background = new FlxSprite();
@@ -75,8 +73,7 @@ class StateModeList extends FlxState
 		add(modeBeatImage);
 	}
 
-	public override function update(dt:Float)
-	{
+	public override function update(dt:Float) {
 		super.update(dt);
 
 		if (Button.pressed(modeClassicText))

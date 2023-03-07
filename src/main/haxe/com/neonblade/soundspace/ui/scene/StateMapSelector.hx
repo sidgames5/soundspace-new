@@ -1,26 +1,23 @@
-package io.github.keystone_games.soundspace.ui.scene;
+package com.neonblade.soundspace.ui.scene;
 
 import flixel.util.FlxColor;
 import flixel.text.FlxText;
 import flixel.FlxG;
-import io.github.keystone_games.soundspace.lists.Modes;
+import com.neonblade.soundspace.lists.Modes;
 import flixel.FlxState;
 
-class StateMapSelector extends FlxState
-{
+class StateMapSelector extends FlxState {
 	public static var mapList:Modes;
 
 	public static var modeIndicator:FlxText;
 
-	public function new(list:Modes)
-	{
+	public function new(list:Modes) {
 		super();
 
 		mapList = list;
 	}
 
-	public override function create()
-	{
+	public override function create() {
 		super.create();
 
 		FlxG.updateFramerate = 60;
@@ -30,8 +27,7 @@ class StateMapSelector extends FlxState
 		modeIndicator.screenCenter(X);
 		add(modeIndicator);
 
-		switch (mapList)
-		{
+		switch (mapList) {
 			case CLASSIC:
 				createClassic();
 			case PONG:
@@ -43,28 +39,18 @@ class StateMapSelector extends FlxState
 		}
 	}
 
-	public static function createClassic()
-	{
-	}
+	public static function createClassic() {}
 
-	public static function createPong()
-	{
-	}
+	public static function createPong() {}
 
-	public static function createKeyboard()
-	{
-	}
+	public static function createKeyboard() {}
 
-	public static function createBeat()
-	{
-	}
+	public static function createBeat() {}
 
-	public override function update(dt:Float)
-	{
+	public override function update(dt:Float) {
 		super.update(dt);
 
-		switch (mapList)
-		{
+		switch (mapList) {
 			case CLASSIC:
 				modeIndicator.text = "Classic Mode";
 			case PONG:

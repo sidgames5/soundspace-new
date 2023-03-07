@@ -28,9 +28,9 @@
 	<haxelib name="flixel-addons" />
 	<haxelib name="flixel-ui" />
 	<haxelib name="random" />
-	<haxelib name="console.hx" />
-	<haxelib name="console-out" />
-	<haxelib name="kglog" />
+	<!-- <haxelib name="console.hx" /> -->
+	<!-- <haxelib name="console-out" /> -->
+	<!-- <haxelib name="kglog" /> -->
 
 	<!-- ______________________________ Haxedefines _____________________________ -->
 

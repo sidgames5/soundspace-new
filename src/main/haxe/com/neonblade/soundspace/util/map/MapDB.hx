@@ -1,4 +1,4 @@
-package io.github.keystone_games.soundspace.util.map;
+package com.neonblade.soundspace.util.map;
 
 class MapDB {
 	public static final Level1 = {

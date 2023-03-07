@@ -1,11 +1,11 @@
-package io.github.keystone_games.soundspace.ui.scene;
+package com.neonblade.soundspace.ui.scene;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.util.FlxColor;
 import flixel.text.FlxText;
 import flixel.FlxState;
-import io.github.keystone_games.soundspace.ui.util.Button;
+import com.neonblade.soundspace.ui.util.Button;
 
 class StateMenu extends FlxState {
 	public static var titleText:FlxText;

@@ -1,9 +1,8 @@
-package io.github.keystone_games.soundspace.ui.scene;
+package com.neonblade.soundspace.ui.scene;
 
 import flixel.FlxG;
 import flixel.FlxState;
-import io.github.keystone_games.soundspace.util.map.MapManager;
-import io.github.keystone_games.soundspace.ui.scene.play.CLevel1;
+import com.neonblade.soundspace.util.map.MapManager;
 
 class Redirector extends FlxState {
 	public override function create() {
@@ -17,7 +16,7 @@ class Redirector extends FlxState {
 		switch (m.lm) {
 			case 0:
 				FlxG.updateFramerate = 1000;
-				FlxG.switchState(new CLevel1());
+				FlxG.switchState(null);
 		}
 	}
 }

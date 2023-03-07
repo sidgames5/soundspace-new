@@ -1,4 +1,4 @@
-package io.github.keystone_games.soundspace.lists;
+package com.neonblade.soundspace.lists;
 
 enum Modes {
 	CLASSIC;

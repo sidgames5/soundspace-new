@@ -1,4 +1,4 @@
-package io.github.keystone_games.soundspace.ui.util;
+package com.neonblade.soundspace.ui.util;
 
 import flixel.FlxG;
 import flixel.FlxObject;
