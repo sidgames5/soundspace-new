@@ -1,0 +1,10 @@
+{
+	// This is one of several files that will be placed in a zip file with the file extension changed to .scp. Inside the zip file will contain an ogg music file, a JSON metadata file, and several JSON chart files.
+
+	// Song metadata
+	"name": "Example Song",
+	"artist": "Artist 1, Artist 2",
+	"album": "Name of the song's album",
+	"bpm": 90,
+	"time_signature": "4/4"
+}

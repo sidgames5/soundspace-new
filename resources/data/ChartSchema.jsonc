@@ -1,0 +1,21 @@
+{
+	// This is one of several files that will be placed in a zip file with the file extension changed to .scp. Inside the zip file will contain an ogg music file, a JSON metadata file, and several JSON chart files.
+
+	// This is the name of the level that will be displayed in the menu.
+	"level_name": "easy",
+
+	// This determines the order of how the levels are presented in the menu. Higher will be placed at the bottom. The lowest should be the easiest.
+	"level_order": 1,
+
+	// Time from start of the song to the first beat in the song (in milliseconds)
+	"start_offset": 0,
+
+	// The number of lanes the chart can use (1-8)
+	"lane_count": 4,
+
+	"chart": {
+		// The numbers inside the brackets have meanings: 0 - no note, 1 - start note (single note if followed by 0 or 1), 2 - continue note, 3 - end note
+		"1.1.1.001": [0, 0, 1, 0],
+		"1.2.1.001": [1, 0, 1, 1]
+	}
+}
