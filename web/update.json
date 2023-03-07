@@ -1,11 +1,11 @@
 {
-    "top": {
-        "latest": "",
-        "stable": "",
-        "ptb": "",
-        "nightly": ""
-    },
-    "versions": [
-        
-    ]
+  "top": {
+    "latest": "1.0.0-nightly.2",
+    "stable": "",
+    "ptb": "",
+    "beta": "",
+    "alpha": "",
+    "nightly": "1.0.0-nightly.2"
+  },
+  "versions": ["1.0.0-nightly.1", "1.0.0-nightly.2"]
 }
