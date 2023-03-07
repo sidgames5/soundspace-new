@@ -1,8 +1,9 @@
 {
     "top": {
-        "stable": "",
         "latest": "",
-        "lts": ""
+        "stable": "",
+        "ptb": "",
+        "nightly": ""
     },
     "versions": [
         
