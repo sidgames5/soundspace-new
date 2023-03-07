@@ -28,6 +28,7 @@ class SoundSpace extends Sprite
 	public static function init()
 	{
 		postInit();
+		Logger.info("Completed initialization");
 	}
 
 	public static function postInit()
@@ -40,13 +41,13 @@ class SoundSpace extends Sprite
 		Logger.info("Music now playing: " + Data.Menu__wav);
 		#end
 		MapManager.temp_init();
+		
+		Logger.info("Completed post initialization");
 	}
 
 	public static function exit(exitCode:Int)
 	{
-		#if debug
 		Logger.info("Quitting application...");
-		#end
 		System.exit(exitCode);
 	}
 }
