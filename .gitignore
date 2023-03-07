@@ -3,6 +3,7 @@ hxformat.json
 *.hxproj
 
 # Build
-Build/
-Release/
-bin/
+**/[Bb]uild/
+**/[Dd]ebug/
+**/[Rr]elease/
+**/[Bb]in/
