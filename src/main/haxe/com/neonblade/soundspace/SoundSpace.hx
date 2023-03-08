@@ -23,18 +23,19 @@ class SoundSpace extends Sprite {
 	}
 
 	public static function init() {
+		Lib.current.addChild(new FlxGame(0, 0, #if html5 StateMenu #else StateLoading #end, 1, 15, 15, #if html5 false #else true #end, false));
+
 		postInit();
 		trace("Completed initialization");
 	}
 
 	public static function postInit() {
-		Lib.current.addChild(new FlxGame(0, 0, #if html5 StateMenu #else StateLoading #end, 1, 15, 15, #if html5 false #else true #end, false));
 		#if debug
 		Lib.current.addChild(new FPS(10, 10, 0xffffff));
+		#end
 		trace("Playing menu music");
 		// FlxG.sound.playMusic(Data.Menu__wav, Reference.VOLUME_MULTIPLIER, true);
 		trace("Music now playing: " + Data.Menu__wav);
-		#end
 		MapManager.temp_init();
 
 		trace("Completed post initialization");

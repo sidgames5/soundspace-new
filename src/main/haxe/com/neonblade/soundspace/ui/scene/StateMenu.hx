@@ -1,5 +1,6 @@
 package com.neonblade.soundspace.ui.scene;
 
+import com.neonblade.soundspace.lists.Modes;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.util.FlxColor;
@@ -35,7 +36,7 @@ class StateMenu extends FlxState {
 		}
 
 		if (Button.pressed(playButton)) {
-			FlxG.switchState(new StateModeList());
+			FlxG.switchState(new StateMapSelector(Modes.CLASSIC));
 		}
 	}
 }

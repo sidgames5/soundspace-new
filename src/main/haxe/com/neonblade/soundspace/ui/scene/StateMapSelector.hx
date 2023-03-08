@@ -52,7 +52,7 @@ class StateMapSelector extends FlxState {
 
 		switch (mapList) {
 			case CLASSIC:
-				modeIndicator.text = "Classic Mode";
+				modeIndicator.text = "Available Songs";
 			case PONG:
 				modeIndicator.text = "Pong Mode";
 			case KEYBOARD:
