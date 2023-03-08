@@ -22,6 +22,10 @@ class StateMapSelector extends FlxState {
 
 		FlxG.updateFramerate = 60;
 		FlxG.drawFramerate = 60;
+		
+		#if debug
+			FlxG.switchState(new StateChartPlayer());
+		#end
 
 		modeIndicator = new FlxText(0, 0, 0, "X Mode").setFormat(null, 32, FlxColor.WHITE, CENTER);
 		modeIndicator.screenCenter(X);
