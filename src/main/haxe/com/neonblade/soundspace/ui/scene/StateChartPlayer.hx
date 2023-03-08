@@ -17,7 +17,7 @@ class StateChartPlayer extends FlxState {
 		add(background);
 		
 		// this is just testing code
-		if (Math.random() == 0.1) {
+		if (Math.random() < 0.1) {
 			var p = new FlxSprite(Assets.NOTE__png);
 			p.x = Random.int(0, FlxG.width);
 			p.y = Random.int(0, FlxG.height);
